@@ -31,7 +31,7 @@ export default function EditMover() {
     useEffect(() => {
         const fetchMover = async () => {
             try {
-                const response = await fetch('http://localhost:3000/api/movers');
+                const response = await fetch('/api/movers');
                 const data = await response.json();
                 if (data.message === 'success') {
                     const mover = data.data.find(m => m.id === parseInt(id));
@@ -72,7 +72,7 @@ export default function EditMover() {
 
     const handleSubmit = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/movers/${id}`, {
+            const response = await fetch(`/api/movers/${id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)

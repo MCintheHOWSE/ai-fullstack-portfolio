@@ -13,7 +13,7 @@ export default function FindPassengers() {
 
     const fetchRequests = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/ride-requests');
+            const response = await fetch('/api/ride-requests');
             const data = await response.json();
             if (data.message === 'success') {
                 setRequests(data.data);
@@ -37,7 +37,7 @@ export default function FindPassengers() {
         }
 
         try {
-            const response = await fetch(`http://localhost:3000/api/ride-requests/${request.id}/invite`, {
+            const response = await fetch(`/api/ride-requests/${request.id}/invite`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

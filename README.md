@@ -11,7 +11,7 @@
 | 專案 | Demo | 技術棧 | AI 工具 |
 |------|------|--------|---------|
 | Todo App | [Live Demo](https://ai-engineer-preparation.vercel.app) | Next.js 16, Supabase, PostgreSQL, RLS | Cursor |
-| Dot to Dot 校園平台 | [GitHub 原始碼](./DOT%20to%20DOT/大四專題報告/) · [本地 Demo 指南](./DOT%20to%20DOT/大四專題報告/DEMO_GUIDE.md) | React, Node.js, SQLite, Socket.io | 傳統開發 + Cursor 輔助重構 |
+| Dot to Dot 校園平台 | [Live Demo 上線指南](./DOT%20to%20DOT/大四專題報告/DEPLOY.md) · [原始碼](./DOT%20to%20DOT/大四專題報告/) | React, Node.js, SQLite, Socket.io | 傳統開發 + Cursor 輔助重構 |
 | F1 LINE Bot | [GitHub 原始碼](./linebot專案/f1_bot/) | Python, Dialogflow, LINE API | Cursor |
 
 ---
@@ -37,6 +37,8 @@
 - 零知識支付、能力過濾、實報實銷議價
 
 📁 [`DOT to DOT/大四專題報告`](./DOT%20to%20DOT/大四專題報告)
+
+**線上 Live Demo：** 見 [DEPLOY.md](./DOT%20to%20DOT/大四專題報告/DEPLOY.md)（Render 一鍵部署，約 5 分鐘）。部署完成後把網址填回上方 Live Demos 表格。
 
 **本地試玩：**
 

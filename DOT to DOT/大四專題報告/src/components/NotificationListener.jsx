@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { io } from 'socket.io-client';
+import { socketServerUrl } from '../config';
 
 const NotificationListener = () => {
     const navigate = useNavigate();
@@ -22,7 +23,7 @@ const NotificationListener = () => {
     useEffect(() => {
         if (!user) return;
 
-        const socket = io('http://localhost:3000');
+        const socket = io(socketServerUrl());
 
         // Server emits exact event name: notification_{userId}
         const eventName = `notification_${user.id}`;

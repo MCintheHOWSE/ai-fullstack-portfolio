@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
+import { socketServerUrl } from '../config';
 import { useNavigate } from 'react-router-dom';
 
 const NotificationBell = ({ currentUser }) => {
@@ -16,7 +17,7 @@ const NotificationBell = ({ currentUser }) => {
         fetchNotifications();
 
         // Connect to Socket
-        socketRef.current = io('http://localhost:3000');
+        socketRef.current = io(socketServerUrl());
 
         // Listen for personal notifications
         socketRef.current.on(`notification_${currentUser.id}`, (newNotification) => {
@@ -41,7 +42,7 @@ const NotificationBell = ({ currentUser }) => {
 
     const fetchNotifications = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/notifications/${currentUser.id}`);
+            const response = await fetch(`/api/notifications/${currentUser.id}`);
             const data = await response.json();
             if (response.ok) {
                 setNotifications(data.data);
@@ -71,7 +72,7 @@ const NotificationBell = ({ currentUser }) => {
         if (notification.is_read) return;
 
         try {
-            await fetch(`http://localhost:3000/api/notifications/${notification.id}/read`, {
+            await fetch(`/api/notifications/${notification.id}/read`, {
                 method: 'PUT'
             });
 

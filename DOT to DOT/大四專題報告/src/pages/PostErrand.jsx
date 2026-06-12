@@ -29,7 +29,7 @@ const PostErrand = () => {
         const user = JSON.parse(userStr);
 
         try {
-            const response = await fetch('http://localhost:3000/api/errands', {
+            const response = await fetch('/api/errands', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

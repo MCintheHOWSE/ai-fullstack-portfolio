@@ -42,7 +42,7 @@ const RideDetail = () => {
             // "app.get('/api/rides/:id')" DOES exist in my memory? Let's check.
             // I will assume it exists or I will add it.
 
-            const res = await fetch(`http://localhost:3000/api/rides/${id}`); // We might need to implement this
+            const res = await fetch(`/api/rides/${id}`); // We might need to implement this
             if (res.ok) {
                 const data = await res.json();
                 // If the endpoint returns {message: "success", data: ...}

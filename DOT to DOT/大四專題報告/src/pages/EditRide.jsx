@@ -23,7 +23,7 @@ export default function EditRide() {
                 // Since we don't have a single ride endpoint in the initial setup, 
                 // we might need to fetch all and find, or assume the backend supports /api/rides/:id
                 // Let's assume we added GET /api/rides/:id or we can filter from all
-                const response = await fetch('http://localhost:3000/api/rides');
+                const response = await fetch('/api/rides');
                 const data = await response.json();
                 if (data.message === 'success') {
                     const ride = data.data.find(r => r.id === parseInt(id));
@@ -57,7 +57,7 @@ export default function EditRide() {
 
     const handleSubmit = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/rides/${id}`, {
+            const response = await fetch(`/api/rides/${id}`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)

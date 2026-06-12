@@ -21,7 +21,7 @@ export default function MyFoodOrders() {
 
     const fetchMyOrders = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/food-orders/my-orders?user_id=${user.id}`);
+            const response = await fetch(`/api/food-orders/my-orders?user_id=${user.id}`);
             const data = await response.json();
 
             if (data.message === 'success') {

@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: dot-to-dot
+    runtime: node
+    rootDir: DOT to DOT/大四專題報告
+    buildCommand: npm install && npm run build
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true

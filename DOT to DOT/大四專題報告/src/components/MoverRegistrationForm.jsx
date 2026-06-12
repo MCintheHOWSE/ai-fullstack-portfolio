@@ -59,7 +59,7 @@ const MoverRegistrationForm = ({ onClose, onSuccess }) => {
                 tags: tagsToSubmit
             });
 
-            const response = await fetch('http://localhost:3000/api/movers', {
+            const response = await fetch('/api/movers', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -78,7 +78,7 @@ const MoverRegistrationForm = ({ onClose, onSuccess }) => {
             if (!contentType || !contentType.includes('application/json')) {
                 const text = await response.text();
                 console.error('Non-JSON response:', text.substring(0, 200));
-                setError(`伺服器返回了非JSON響應。請確認後端服務器在 http://localhost:3000 正常運行。`);
+                setError(`伺服器返回了非JSON響應。請確認後端服務器正常運行。`);
                 setLoading(false);
                 return;
             }

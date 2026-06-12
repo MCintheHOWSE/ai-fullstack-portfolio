@@ -13,7 +13,7 @@ const MoverCard = ({ mover, showActions }) => {
     const handleDelete = async () => {
         if (window.confirm('確定要刪除此搬家服務嗎？')) {
             try {
-                const response = await fetch(`http://localhost:3000/api/movers/${mover.id}`, {
+                const response = await fetch(`/api/movers/${mover.id}`, {
                     method: 'DELETE',
                 });
                 if (response.ok) {
@@ -37,7 +37,7 @@ const MoverCard = ({ mover, showActions }) => {
         }
         if (window.confirm('確定要預約此搬家服務嗎？')) {
             try {
-                const response = await fetch(`http://localhost:3000/api/movers/${mover.id}/book`, {
+                const response = await fetch(`/api/movers/${mover.id}/book`, {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ customer_id: currentUser.id })

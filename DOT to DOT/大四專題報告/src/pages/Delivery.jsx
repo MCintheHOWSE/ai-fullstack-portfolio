@@ -29,7 +29,7 @@ const Delivery = () => {
 
     const fetchErrands = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/errands');
+            const response = await fetch('/api/errands');
             const data = await response.json();
             if (response.ok) {
                 setErrands(data.data);
@@ -53,7 +53,7 @@ const Delivery = () => {
         }
 
         try {
-            const response = await fetch(`http://localhost:3000/api/errands/${id}/accept`, {
+            const response = await fetch(`/api/errands/${id}/accept`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

@@ -20,7 +20,7 @@ const ChatList = () => {
 
     const fetchConversations = async (userId) => {
         try {
-            const res = await fetch(`http://localhost:3000/api/user/active-conversations?userId=${userId}`);
+            const res = await fetch(`/api/user/active-conversations?userId=${userId}`);
             const data = await res.json();
             if (data.message === 'success') {
                 setConversations(data.data);

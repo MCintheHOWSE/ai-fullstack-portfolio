@@ -29,7 +29,7 @@ const RideCard = ({ ride, showActions, targetChatId }) => {
         }
         if (window.confirm('確定要加入此行程嗎？')) {
             try {
-                const response = await fetch(`http://localhost:3000/api/rides/${localRide.id}/join`, {
+                const response = await fetch(`/api/rides/${localRide.id}/join`, {
                     method: 'PUT',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ passenger_id: currentUser.id })
@@ -51,7 +51,7 @@ const RideCard = ({ ride, showActions, targetChatId }) => {
     const handleDelete = async () => {
         if (window.confirm('確定要刪除此共乘嗎？')) {
             try {
-                const response = await fetch(`http://localhost:3000/api/rides/${localRide.id}`, {
+                const response = await fetch(`/api/rides/${localRide.id}`, {
                     method: 'DELETE',
                 });
                 if (response.ok) {

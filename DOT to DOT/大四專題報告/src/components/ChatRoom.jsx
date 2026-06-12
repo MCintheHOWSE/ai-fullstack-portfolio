@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
+import { socketServerUrl } from '../config';
 import StarRating from './StarRating';
 import PaymentCard from './PaymentCard';
 import usePaymentSocket from '../hooks/usePaymentSocket';
@@ -31,7 +32,7 @@ const ChatRoom = ({ itemId, type = 'errand', currentUser, onClose, onComplete })
 
     // Helper to get API endpoints based on type
     const getEndpoints = () => {
-        const base = 'http://localhost:3000/api';
+        const base = '/api';
         if (type === 'errand') {
             return {
                 details: `${base}/errands`,
@@ -67,7 +68,7 @@ const ChatRoom = ({ itemId, type = 'errand', currentUser, onClose, onComplete })
         fetchMessages();
 
         // Initialize Socket.io
-        socketRef.current = io('http://localhost:3000');
+        socketRef.current = io(socketServerUrl());
 
         // Join Room
         socketRef.current.emit('join_room', { itemId, type });
@@ -203,7 +204,7 @@ const ChatRoom = ({ itemId, type = 'errand', currentUser, onClose, onComplete })
         }
 
         try {
-            const response = await fetch('http://localhost:3000/api/ratings', {
+            const response = await fetch('/api/ratings', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -283,7 +284,7 @@ const ChatRoom = ({ itemId, type = 'errand', currentUser, onClose, onComplete })
         try {
             // 1. Call API to update status and create ride
             // We need to pass the driverId (who sent the invite)
-            const res = await fetch(`http://localhost:3000/api/rides/${itemId}/accept`, {
+            const res = await fetch(`/api/rides/${itemId}/accept`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

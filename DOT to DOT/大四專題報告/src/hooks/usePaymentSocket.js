@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import io from 'socket.io-client';
+import { socketServerUrl } from '../config';
 
 /**
  * usePaymentSocket - Custom hook for managing payment-related WebSocket events
@@ -20,7 +21,7 @@ export default function usePaymentSocket(userId, rideId) {
     useEffect(() => {
         if (!userId) return;
 
-        const newSocket = io(`http://${window.location.hostname}:3000`, {
+        const newSocket = io(socketServerUrl(), {
             transports: ['websocket'],
             reconnection: true
         });

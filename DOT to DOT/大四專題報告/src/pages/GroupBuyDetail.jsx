@@ -23,7 +23,7 @@ export default function GroupBuyDetail() {
 
     const fetchGroupBuyDetail = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/group-buys/${id}`);
+            const response = await fetch(`/api/group-buys/${id}`);
             const data = await response.json();
 
             if (data.message === 'success') {
@@ -45,7 +45,7 @@ export default function GroupBuyDetail() {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/api/food-orders', {
+            const response = await fetch('/api/food-orders', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -78,7 +78,7 @@ export default function GroupBuyDetail() {
         if (!confirm('確定要停止收單嗎？停止後將無法再接受新訂單。')) return;
 
         try {
-            const response = await fetch(`http://localhost:3000/api/group-buys/${id}/stop`, {
+            const response = await fetch(`/api/group-buys/${id}/stop`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ runner_id: user.id })
@@ -105,7 +105,7 @@ export default function GroupBuyDetail() {
         }
 
         try {
-            const response = await fetch(`http://localhost:3000/api/food-orders/${orderId}/actual-cost`, {
+            const response = await fetch(`/api/food-orders/${orderId}/actual-cost`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -131,7 +131,7 @@ export default function GroupBuyDetail() {
 
     const handleUpdateStatus = async (newStatus) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/group-buys/${id}/status`, {
+            const response = await fetch(`/api/group-buys/${id}/status`, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

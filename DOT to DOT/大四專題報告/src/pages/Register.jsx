@@ -22,7 +22,7 @@ const Register = () => {
         const email = `${studentId}@scu.edu.tw`;
 
         try {
-            const response = await fetch('http://localhost:3000/api/send-code', {
+            const response = await fetch('/api/send-code', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email })
@@ -68,7 +68,7 @@ const Register = () => {
         const email = `${studentId}@scu.edu.tw`;
 
         try {
-            const response = await fetch('http://localhost:3000/api/register', {
+            const response = await fetch('/api/register', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ name, email, password, gender, code })

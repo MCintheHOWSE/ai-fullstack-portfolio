@@ -18,7 +18,7 @@ const EditErrand = () => {
 
     const fetchErrandDetails = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/errands');
+            const response = await fetch('/api/errands');
             const data = await response.json();
             if (response.ok) {
                 const errand = data.data.find(e => e.id == id);
@@ -52,7 +52,7 @@ const EditErrand = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:3000/api/errands/${id}`, {
+            const response = await fetch(`/api/errands/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

@@ -42,7 +42,7 @@ export default function Profile() {
     const fetchMyData = async (userId) => {
         try {
             // Fetch Rides
-            const ridesRes = await fetch('http://localhost:3000/api/rides');
+            const ridesRes = await fetch('/api/rides');
             const ridesData = await ridesRes.json();
             if (ridesRes.ok) {
                 const allRides = ridesData.data || [];
@@ -51,7 +51,7 @@ export default function Profile() {
             }
 
             // Fetch Movers
-            const moversRes = await fetch('http://localhost:3000/api/movers');
+            const moversRes = await fetch('/api/movers');
             const moversData = await moversRes.json();
             if (moversRes.ok) {
                 const allMovers = moversData.data || [];
@@ -64,7 +64,7 @@ export default function Profile() {
             }
 
             // Fetch Errands
-            const errandsRes = await fetch(`http://localhost:3000/api/users/${userId}/errands`);
+            const errandsRes = await fetch(`/api/users/${userId}/errands`);
             const errandsData = await errandsRes.json();
             if (errandsRes.ok) {
                 setMyErrands(errandsData.data || []);

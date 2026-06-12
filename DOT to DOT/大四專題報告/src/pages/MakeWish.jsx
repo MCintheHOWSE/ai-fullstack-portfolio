@@ -37,7 +37,7 @@ export default function MakeWish() {
                 max_orders: parseInt(formData.max_orders)
             };
 
-            const response = await fetch('http://localhost:3000/api/group-buys', {
+            const response = await fetch('/api/group-buys', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -38,7 +38,7 @@ export default function PostRequest() {
                 user_id: user.id
             };
 
-            const response = await fetch('http://localhost:3000/api/ride-requests', {
+            const response = await fetch('/api/ride-requests', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)

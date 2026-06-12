@@ -15,8 +15,8 @@ export default function FoodDelivery() {
     const fetchGroupBuys = async () => {
         try {
             const url = filter === 'all'
-                ? 'http://localhost:3000/api/group-buys'
-                : `http://localhost:3000/api/group-buys?type=${filter}`;
+                ? '/api/group-buys'
+                : `/api/group-buys?type=${filter}`;
 
             const response = await fetch(url);
             const data = await response.json();

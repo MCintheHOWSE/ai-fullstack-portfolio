@@ -12,7 +12,7 @@ const Admin = () => {
 
     const fetchUsers = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/admin/users');
+            const response = await fetch('/api/admin/users');
             const data = await response.json();
             if (response.ok) {
                 setUsers(data.data);
@@ -50,7 +50,7 @@ const Admin = () => {
 
     const handleUpdateUser = async (updatedData) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/users/${editingUser.id}`, {
+            const response = await fetch(`/api/users/${editingUser.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ const Admin = () => {
 
     const handleDeleteUser = async (userId) => {
         try {
-            const response = await fetch(`http://localhost:3000/api/users/${userId}`, {
+            const response = await fetch(`/api/users/${userId}`, {
                 method: 'DELETE',
             });
 

@@ -18,7 +18,7 @@ const sqlite3Verbose = sqlite3.verbose();
 
 const app = express();
 const httpServer = createServer(app);
-const clientUrl = process.env.CLIENT_URL || "http://localhost:5173";
+const clientUrl = process.env.CLIENT_URL || process.env.RENDER_EXTERNAL_URL || "http://localhost:5173";
 const io = new Server(httpServer, {
     cors: {
         origin: clientUrl,
@@ -365,6 +365,23 @@ const db = new sqlite3Verbose.Database(dbPath, (err) => {
                         stmt.run("林教授", "外雙溪校區", "城中校區", "2023-11-25T18:00", 3, 30, "歡迎同學搭乘");
                         stmt.finalize();
                     }
+                });
+
+                // Demo admin for online showcase
+                db.get("SELECT id FROM users WHERE email = ?", ['admin@scu.edu.tw'], (err, row) => {
+                    if (row) return;
+                    bcrypt.hash('admin123', 10, (hashErr, hash) => {
+                        if (hashErr) return;
+                        db.run(
+                            "INSERT INTO users (email, password, name, gender, role, is_admin) VALUES (?,?,?,?,?,?)",
+                            ['admin@scu.edu.tw', hash, '系統管理員', 'M', 'admin', 1],
+                            (insertErr) => {
+                                if (!insertErr) {
+                                    console.log('Demo admin ready: admin@scu.edu.tw / admin123');
+                                }
+                            }
+                        );
+                    });
                 });
             }
         });
@@ -2795,8 +2812,17 @@ const db = new sqlite3Verbose.Database(dbPath, (err) => {
             });
         });
 
-        httpServer.listen(port, () => {
-            console.log(`Server running on http://localhost:${port}`);
+        const distPath = path.resolve(__dirname, '../dist');
+        if (process.env.NODE_ENV === 'production') {
+            app.use(express.static(distPath));
+            app.get(/^(?!\/api).*/, (req, res) => {
+                res.sendFile(path.join(distPath, 'index.html'));
+            });
+        }
+
+        const host = process.env.HOST || '0.0.0.0';
+        httpServer.listen(port, host, () => {
+            console.log(`Server running on http://${host}:${port}`);
         });
     }
 });
