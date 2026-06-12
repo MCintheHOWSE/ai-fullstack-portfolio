@@ -1,0 +1,69 @@
+{
+  "id": "0c0950ee-3ab3-4ad1-a441-2a0beea8fd8f",
+  "name": "Wiki_Team_Williams",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Williams Racing (FW47)\n------------------\n2025 車手：Alexander Albon, Carlos Sainz\n動力：Mercedes-AMG\n賽季結算：\nSainz 的加盟讓威廉斯成為中游集團最強勁的隊伍，多次殺入 Q3 並穩定拿分。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "e2766292-1b7b-4e4b-85b3-322336d4ac74",
+      "data": [
+        {
+          "text": "williams",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "8cadc043-1eed-4e62-9787-60d2366c7b08",
+      "data": [
+        {
+          "text": "介紹 williams",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "66ece280-102a-4329-abe3-59479301bf7e",
+      "data": [
+        {
+          "text": "williams 車隊",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

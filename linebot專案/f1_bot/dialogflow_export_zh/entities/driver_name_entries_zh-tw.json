@@ -1,0 +1,171 @@
+[
+  {
+    "value": "max",
+    "synonyms": [
+      "Max",
+      "Verstappen",
+      "維斯塔潘",
+      "Super Max",
+      "紅牛一號"
+    ]
+  },
+  {
+    "value": "yuki",
+    "synonyms": [
+      "Yuki",
+      "Tsunoda",
+      "角田",
+      "裕毅"
+    ]
+  },
+  {
+    "value": "lewis",
+    "synonyms": [
+      "Lewis",
+      "Hamilton",
+      "漢米爾頓",
+      "老漢",
+      "七冠王"
+    ]
+  },
+  {
+    "value": "charles",
+    "synonyms": [
+      "Charles",
+      "Leclerc",
+      "勒克萊爾",
+      "法拉利金童"
+    ]
+  },
+  {
+    "value": "lando",
+    "synonyms": [
+      "Lando",
+      "Norris",
+      "諾里斯",
+      "世界冠軍"
+    ]
+  },
+  {
+    "value": "oscar",
+    "synonyms": [
+      "Oscar",
+      "Piastri",
+      "皮亞斯特里"
+    ]
+  },
+  {
+    "value": "george",
+    "synonyms": [
+      "George",
+      "Russell",
+      "羅素"
+    ]
+  },
+  {
+    "value": "kimi",
+    "synonyms": [
+      "Kimi",
+      "Antonelli",
+      "安東內利",
+      "基米"
+    ]
+  },
+  {
+    "value": "fernando",
+    "synonyms": [
+      "Fernando",
+      "Alonso",
+      "阿隆索",
+      "龍哥"
+    ]
+  },
+  {
+    "value": "lance",
+    "synonyms": [
+      "Lance",
+      "Stroll",
+      "斯特羅爾"
+    ]
+  },
+  {
+    "value": "alex",
+    "synonyms": [
+      "Alex",
+      "Albon",
+      "阿爾本"
+    ]
+  },
+  {
+    "value": "sainz",
+    "synonyms": [
+      "Carlos",
+      "Sainz",
+      "塞恩斯"
+    ]
+  },
+  {
+    "value": "pierre",
+    "synonyms": [
+      "Pierre",
+      "Gasly",
+      "加斯利"
+    ]
+  },
+  {
+    "value": "jack",
+    "synonyms": [
+      "Jack",
+      "Doohan",
+      "杜漢"
+    ]
+  },
+  {
+    "value": "liam",
+    "synonyms": [
+      "Liam",
+      "Lawson",
+      "羅森"
+    ]
+  },
+  {
+    "value": "esteban",
+    "synonyms": [
+      "Esteban",
+      "Ocon",
+      "奧康"
+    ]
+  },
+  {
+    "value": "ollie",
+    "synonyms": [
+      "Ollie",
+      "Bearman",
+      "比爾曼"
+    ]
+  },
+  {
+    "value": "nico",
+    "synonyms": [
+      "Nico",
+      "Hulkenberg",
+      "霍肯伯格"
+    ]
+  },
+  {
+    "value": "gabriel",
+    "synonyms": [
+      "Gabriel",
+      "Bortoleto",
+      "博托萊托"
+    ]
+  },
+  {
+    "value": "hadjar",
+    "synonyms": [
+      "Hadjar",
+      "Isack Hadjar",
+      "哈傑爾"
+    ]
+  }
+]

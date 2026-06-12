@@ -1,0 +1,9 @@
+{
+  "id": "e1d29e71-2f2a-4a71-89d6-be9160ce4e87",
+  "name": "team_name",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}

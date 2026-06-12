@@ -1,0 +1,69 @@
+{
+  "id": "504fdb61-5b1e-4049-be35-0ad7915268e8",
+  "name": "Wiki_Track_Saudi",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "沙烏地 (Jeddah)\n特點：極速街道賽。盲彎極多，容錯率為零。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "52418257-6ac6-43cd-85f8-184e10901aba",
+      "data": [
+        {
+          "text": "saudi",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "05e41463-f644-46f6-83ee-b9cae3a14bb6",
+      "data": [
+        {
+          "text": "介紹 saudi",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "6bce9d2f-bb56-4c8e-8f41-3b355f258444",
+      "data": [
+        {
+          "text": "saudi 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

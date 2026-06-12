@@ -1,0 +1,69 @@
+{
+  "id": "4bb140f9-8ae7-4b87-b2fb-bba447017350",
+  "name": "Wiki_Team_Haas",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "MoneyGram Haas F1 Team (VF-25)\n------------------\n2025 車手：Esteban Ocon, Oliver Bearman\n動力：Ferrari 066/14\n賽季結算：\n全新的陣容。Ocon 的速度與 Bearman 的穩定性讓 Haas 在中游集團保有一席之地。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "c66520a9-d22e-4cc9-a98c-350e03a9ee5f",
+      "data": [
+        {
+          "text": "haas",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "17ed5572-c9d3-46c4-a67d-09001b2da429",
+      "data": [
+        {
+          "text": "介紹 haas",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "f4ae62da-e5ff-4e5e-b70c-17f74201aaca",
+      "data": [
+        {
+          "text": "haas 車隊",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

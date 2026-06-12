@@ -1,0 +1,69 @@
+{
+  "id": "bf0b523a-0f10-481f-bcb9-e6dddbe2cd34",
+  "name": "Wiki_Track_Mexico",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "墨西哥 (Mexico City)\n特點：高原作戰。空氣稀薄，極速高但冷卻難。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "d54a1de3-d256-45fd-b328-0282b6e10d2b",
+      "data": [
+        {
+          "text": "mexico",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "33dea80a-adb1-4219-9852-dd0a61e74bf7",
+      "data": [
+        {
+          "text": "介紹 mexico",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "fa0f30ac-8119-49cb-a2c9-85fa1c3976f5",
+      "data": [
+        {
+          "text": "mexico 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

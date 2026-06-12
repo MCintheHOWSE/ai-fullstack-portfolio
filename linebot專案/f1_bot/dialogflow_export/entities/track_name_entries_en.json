@@ -1,0 +1,206 @@
+[
+  {
+    "value": "bahrain",
+    "synonyms": [
+      "Bahrain",
+      "巴林",
+      "Sakhir"
+    ]
+  },
+  {
+    "value": "saudi",
+    "synonyms": [
+      "Saudi",
+      "沙烏地",
+      "Jeddah",
+      "吉達"
+    ]
+  },
+  {
+    "value": "australia",
+    "synonyms": [
+      "Australia",
+      "澳洲",
+      "Melbourne"
+    ]
+  },
+  {
+    "value": "japan",
+    "synonyms": [
+      "Japan",
+      "Suzuka",
+      "日本",
+      "鈴鹿"
+    ]
+  },
+  {
+    "value": "china",
+    "synonyms": [
+      "China",
+      "Shanghai",
+      "中國",
+      "上海"
+    ]
+  },
+  {
+    "value": "miami",
+    "synonyms": [
+      "Miami",
+      "邁阿密"
+    ]
+  },
+  {
+    "value": "imola",
+    "synonyms": [
+      "Imola",
+      "Emilia Romagna",
+      "伊莫拉"
+    ]
+  },
+  {
+    "value": "monaco",
+    "synonyms": [
+      "Monaco",
+      "摩納哥",
+      "蒙地卡羅"
+    ]
+  },
+  {
+    "value": "canada",
+    "synonyms": [
+      "Canada",
+      "Montreal",
+      "加拿大",
+      "蒙特婁"
+    ]
+  },
+  {
+    "value": "spain",
+    "synonyms": [
+      "Spain",
+      "Barcelona",
+      "西班牙",
+      "巴塞隆納"
+    ]
+  },
+  {
+    "value": "austria",
+    "synonyms": [
+      "Austria",
+      "Red Bull Ring",
+      "奧地利",
+      "紅牛環"
+    ]
+  },
+  {
+    "value": "uk",
+    "synonyms": [
+      "UK",
+      "Silverstone",
+      "英國",
+      "銀石"
+    ]
+  },
+  {
+    "value": "hungary",
+    "synonyms": [
+      "Hungary",
+      "Hungaroring",
+      "匈牙利"
+    ]
+  },
+  {
+    "value": "belgium",
+    "synonyms": [
+      "Belgium",
+      "Spa",
+      "比利時",
+      "斯帕"
+    ]
+  },
+  {
+    "value": "netherlands",
+    "synonyms": [
+      "Netherlands",
+      "Zandvoort",
+      "荷蘭"
+    ]
+  },
+  {
+    "value": "monza",
+    "synonyms": [
+      "Italy",
+      "Monza",
+      "義大利",
+      "蒙扎"
+    ]
+  },
+  {
+    "value": "baku",
+    "synonyms": [
+      "Azerbaijan",
+      "Baku",
+      "亞塞拜然",
+      "巴庫"
+    ]
+  },
+  {
+    "value": "singapore",
+    "synonyms": [
+      "Singapore",
+      "Marina Bay",
+      "新加坡"
+    ]
+  },
+  {
+    "value": "austin",
+    "synonyms": [
+      "USA",
+      "Austin",
+      "COTA",
+      "美國",
+      "奧斯汀"
+    ]
+  },
+  {
+    "value": "mexico",
+    "synonyms": [
+      "Mexico",
+      "墨西哥"
+    ]
+  },
+  {
+    "value": "brazil",
+    "synonyms": [
+      "Brazil",
+      "Interlagos",
+      "巴西",
+      "因特拉格斯"
+    ]
+  },
+  {
+    "value": "vegas",
+    "synonyms": [
+      "Las Vegas",
+      "Vegas",
+      "拉斯維加斯",
+      "賭城"
+    ]
+  },
+  {
+    "value": "qatar",
+    "synonyms": [
+      "Qatar",
+      "Lusail",
+      "卡達"
+    ]
+  },
+  {
+    "value": "abudhabi",
+    "synonyms": [
+      "Abu Dhabi",
+      "Yas Marina",
+      "阿布達比"
+    ]
+  }
+]

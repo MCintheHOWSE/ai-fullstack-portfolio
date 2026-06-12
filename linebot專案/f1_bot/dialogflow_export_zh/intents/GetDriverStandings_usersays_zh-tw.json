@@ -1,0 +1,67 @@
+[
+  {
+    "id": "9dec79a4-9996-476d-b99e-0abf72f56a21",
+    "data": [
+      {
+        "text": "車手積分",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  },
+  {
+    "id": "700f674c-512e-43f8-9971-981322370e2f",
+    "data": [
+      {
+        "text": "積分榜",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  },
+  {
+    "id": "6b9b035d-e861-43cd-b8f9-9184849bd0df",
+    "data": [
+      {
+        "text": "誰是第一名",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  },
+  {
+    "id": "9063c2bf-7dd3-4dda-b8af-35d5f4dc150c",
+    "data": [
+      {
+        "text": "車手排名",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  },
+  {
+    "id": "e13043b6-2822-4fd9-ac3c-d56865a0e9b2",
+    "data": [
+      {
+        "text": "Driver Standings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  }
+]

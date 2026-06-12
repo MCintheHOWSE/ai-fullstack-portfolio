@@ -1,0 +1,69 @@
+{
+  "id": "b9141d63-df86-412c-aeed-4d055051e06f",
+  "name": "Wiki_Track_Monza",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "義大利 (Monza)\n特點：速度殿堂。全油門時間最長，尾翼調到最平。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "33f9faa6-55b2-4d58-bfba-ec3abe1e5888",
+      "data": [
+        {
+          "text": "monza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "a2ca77fb-10a3-43c5-9daa-a85f3f3f072b",
+      "data": [
+        {
+          "text": "介紹 monza",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "997c5dcc-68ac-40f3-84d7-050d4e8988ad",
+      "data": [
+        {
+          "text": "monza 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

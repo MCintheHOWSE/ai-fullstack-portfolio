@@ -1,0 +1,82 @@
+{
+  "id": "9728d624-7c37-46c7-9226-de41decece7f",
+  "name": "Wiki_Driver_Oscar",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Oscar Piastri (McLaren) #81\n年度排名：P6\n評價：冷靜的刺客。他在關鍵時刻的穩定得分，是麥拉倫能擊敗紅牛的關鍵。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "1b268edd-f23c-41ae-95f0-0c39e1b191e9",
+      "data": [
+        {
+          "text": "oscar",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "825f9794-e111-475d-9615-f832fd52b278",
+      "data": [
+        {
+          "text": "介紹 oscar",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "14815fff-6419-43bc-8431-a95342ec9406",
+      "data": [
+        {
+          "text": "oscar 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "155606d9-1141-47be-bd77-0fac72521c0b",
+      "data": [
+        {
+          "text": "車手 oscar",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

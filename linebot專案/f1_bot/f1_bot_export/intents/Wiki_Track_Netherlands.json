@@ -1,0 +1,69 @@
+{
+  "id": "dc6f3524-bd55-4c43-98c4-021ecf262a62",
+  "name": "Wiki_Track_Netherlands",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "荷蘭 (Zandvoort)\n特點：Max 的主場。獨特的傾斜彎道 (Banking) 像在碗公裡跑。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "13678c80-0fdd-4b81-bcda-ef776ed8fcec",
+      "data": [
+        {
+          "text": "netherlands",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "07dac206-0a69-4481-b30d-3a28054d990f",
+      "data": [
+        {
+          "text": "介紹 netherlands",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "af466862-d7e2-440f-b078-a22b52680b25",
+      "data": [
+        {
+          "text": "netherlands 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

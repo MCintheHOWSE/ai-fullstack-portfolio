@@ -1,0 +1,82 @@
+{
+  "id": "b5069d55-b4a3-43e3-87a3-6c7cdb892ab7",
+  "name": "Wiki_Driver_Ollie",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Oliver Bearman (Haas) #87\n年度排名：P16\n評價：法拉利學院的驕傲。在 Haas 的完整賽季表現超乎預期，未來指日可待。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "9e10a5c1-aaf9-429d-8d25-a26cc5dfbd79",
+      "data": [
+        {
+          "text": "ollie",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "e06b94f1-f5d6-46d2-a7ac-f9d316ede50c",
+      "data": [
+        {
+          "text": "介紹 ollie",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "d50d0097-885d-4958-81c5-85a89a590015",
+      "data": [
+        {
+          "text": "ollie 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "367a5e99-09ba-4df9-99b4-b263839d8d95",
+      "data": [
+        {
+          "text": "車手 ollie",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

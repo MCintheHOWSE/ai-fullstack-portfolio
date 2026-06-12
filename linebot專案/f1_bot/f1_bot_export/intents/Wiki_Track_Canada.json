@@ -1,0 +1,69 @@
+{
+  "id": "a3204511-e330-4bf2-8fb0-7e6cf1564a94",
+  "name": "Wiki_Track_Canada",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "加拿大 (Montreal)\n特點：著名的「冠軍之牆」所在地。煞車與加速的考驗。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "3517f65f-2388-4442-a393-bdaecd8b58bb",
+      "data": [
+        {
+          "text": "canada",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "cf569f87-ed18-483d-85d7-029f733c934e",
+      "data": [
+        {
+          "text": "介紹 canada",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "f7d867c9-8c29-4ebc-96b3-ae592960b0cf",
+      "data": [
+        {
+          "text": "canada 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

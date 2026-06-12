@@ -1,0 +1,69 @@
+{
+  "id": "f724944a-1325-4a4f-94d7-9356cb1b6256",
+  "name": "Wiki_Track_Vegas",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "拉斯維加斯 (Las Vegas)\n特點：賭城夜戰。低溫導致輪胎極難進入工作溫度。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "b1fd77f7-0a3a-4687-971f-16bfe7387c45",
+      "data": [
+        {
+          "text": "vegas",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "614de837-df47-465d-ac6c-05a31b12abce",
+      "data": [
+        {
+          "text": "介紹 vegas",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "a4889a53-f102-4e11-82ae-2408431c0895",
+      "data": [
+        {
+          "text": "vegas 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

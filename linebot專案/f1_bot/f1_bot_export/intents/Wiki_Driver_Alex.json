@@ -1,0 +1,82 @@
+{
+  "id": "e9a18246-19ee-427b-aeda-ec1b1b05d773",
+  "name": "Wiki_Driver_Alex",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Alexander Albon (Williams) #23\n年度排名：P12\n評價：與 Sainz 組成了中游最強搭檔，兩人的良性競爭讓車隊獲益良多。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "9e947f0d-e579-4ef0-a5d6-97e054b1fd27",
+      "data": [
+        {
+          "text": "alex",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "5fadd022-928a-40a3-a554-78c1ff189fd0",
+      "data": [
+        {
+          "text": "介紹 alex",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "b0998ec8-27f0-4e61-a6f3-90f140157d3c",
+      "data": [
+        {
+          "text": "alex 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "dfb0c787-c3b2-4682-87b4-7c007d3bf5b1",
+      "data": [
+        {
+          "text": "車手 alex",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

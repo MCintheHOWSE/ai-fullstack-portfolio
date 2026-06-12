@@ -1,0 +1,69 @@
+{
+  "id": "7601771f-3591-46f0-b735-7d5ba820e7b4",
+  "name": "Wiki_Team_Alpine",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "BWT Alpine F1 Team (A525)\n------------------\n2025 車手：Pierre Gasly, Jack Doohan\n動力：Mercedes-AMG (據傳 2026 將轉用賓士引擎，本季仍用雷諾)\n賽季結算：\n動盪的一年。Doohan 的轉正帶來新氣象，但車隊管理層的不穩定依然影響著賽道表現。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "f0041ca7-d212-4b23-bbfa-65d495686bbb",
+      "data": [
+        {
+          "text": "alpine",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "40c86f38-70d3-4d43-bd44-7b5ac9d3d925",
+      "data": [
+        {
+          "text": "介紹 alpine",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "7ac6e6f5-dc46-41af-a9af-4c204df3e103",
+      "data": [
+        {
+          "text": "alpine 車隊",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

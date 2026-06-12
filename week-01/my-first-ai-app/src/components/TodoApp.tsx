@@ -2,25 +2,19 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import {
+  Todo,
+  TodoFilter,
   createTodo,
   filterTodos,
   loadTodos,
   saveTodos,
-  type Todo,
-  type TodoFilter,
 } from "@/lib/todos";
 
-const FILTERS: { id: TodoFilter; label: string }[] = [
-  { id: "all", label: "全部" },
-  { id: "active", label: "未完成" },
-  { id: "completed", label: "已完成" },
+const FILTERS: { value: TodoFilter; label: string }[] = [
+  { value: "all", label: "全部" },
+  { value: "active", label: "未完成" },
+  { value: "completed", label: "已完成" },
 ];
-
-const EMPTY_MESSAGES: Record<TodoFilter, string> = {
-  all: "還沒有待辦事項，新增第一個吧。",
-  active: "太棒了，目前沒有未完成項目。",
-  completed: "還沒有已完成的待辦。",
-};
 
 export default function TodoApp() {
   const [todos, setTodos] = useState<Todo[]>([]);
@@ -43,17 +37,15 @@ export default function TodoApp() {
     [todos, filter],
   );
 
-  const activeCount = useMemo(
-    () => todos.filter((todo) => !todo.completed).length,
-    [todos],
-  );
+  const activeCount = todos.filter((todo) => !todo.completed).length;
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    const text = input.trim();
-    if (!text) return;
 
-    setTodos((current) => [createTodo(text), ...current]);
+    const trimmed = input.trim();
+    if (!trimmed) return;
+
+    setTodos((current) => [createTodo(trimmed), ...current]);
     setInput("");
   }
 
@@ -69,52 +61,50 @@ export default function TodoApp() {
     setTodos((current) => current.filter((todo) => todo.id !== id));
   }
 
-  function clearCompleted() {
-    setTodos((current) => current.filter((todo) => !todo.completed));
-  }
-
-  const completedCount = todos.length - activeCount;
-
   return (
-    <main className="mx-auto flex min-h-screen max-w-lg flex-col justify-center px-4 py-10">
-      <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <header className="mb-6">
-          <p className="text-sm font-medium text-indigo-600">Week 01</p>
-          <h1 className="mt-1 text-2xl font-semibold text-slate-900">
-            AI Todo App
-          </h1>
-          <p className="mt-2 text-sm text-slate-500">
-            Cursor 練習專案 · localStorage 持久化
-          </p>
-        </header>
+    <div className="mx-auto flex w-full max-w-xl flex-col gap-6 px-4 py-10 sm:px-6">
+      <header className="space-y-2 text-center sm:text-left">
+        <p className="text-sm font-medium uppercase tracking-[0.2em] text-indigo-600">
+          Week 01 · AI Engineer Prep
+        </p>
+        <h1 className="text-3xl font-semibold tracking-tight text-zinc-900">
+          我的 Todo List
+        </h1>
+        <p className="text-sm leading-6 text-zinc-600">
+          用 Cursor 快速生成，再手動調整 UI 與 localStorage 邏輯。
+        </p>
+      </header>
 
-        <form onSubmit={handleSubmit} className="mb-4 flex gap-2">
+      <section className="overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-sm">
+        <form
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-3 border-b border-zinc-200 p-4 sm:flex-row"
+        >
           <input
             type="text"
             value={input}
             onChange={(event) => setInput(event.target.value)}
-            placeholder="新增待辦事項..."
-            className="flex-1 rounded-xl border border-slate-200 px-4 py-2.5 text-sm outline-none ring-indigo-500 transition focus:border-indigo-400 focus:ring-2"
-            aria-label="待辦事項內容"
+            placeholder="輸入待辦事項，按 Enter 新增..."
+            className="flex-1 rounded-xl border border-zinc-300 px-4 py-3 text-sm text-zinc-900 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
           />
           <button
             type="submit"
-            className="rounded-xl bg-indigo-600 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-indigo-500"
+            className="rounded-xl bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-500"
           >
             新增
           </button>
         </form>
 
-        <div className="mb-4 flex gap-2">
+        <div className="flex flex-wrap gap-2 border-b border-zinc-200 px-4 py-3">
           {FILTERS.map((item) => (
             <button
-              key={item.id}
+              key={item.value}
               type="button"
-              onClick={() => setFilter(item.id)}
+              onClick={() => setFilter(item.value)}
               className={`rounded-full px-3 py-1.5 text-xs font-medium transition ${
-                filter === item.id
+                filter === item.value
                   ? "bg-indigo-100 text-indigo-700"
-                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
+                  : "bg-zinc-100 text-zinc-600 hover:bg-zinc-200"
               }`}
             >
               {item.label}
@@ -122,33 +112,47 @@ export default function TodoApp() {
           ))}
         </div>
 
-        <ul className="space-y-2">
+        <ul className="divide-y divide-zinc-100">
           {!isReady ? (
-            <li className="rounded-xl border border-dashed border-slate-200 px-4 py-8 text-center text-sm text-slate-400">
+            <li className="px-4 py-8 text-center text-sm text-zinc-500">
               載入中...
             </li>
           ) : visibleTodos.length === 0 ? (
-            <li className="rounded-xl border border-dashed border-slate-200 px-4 py-8 text-center text-sm text-slate-500">
-              {EMPTY_MESSAGES[filter]}
+            <li className="px-4 py-10 text-center">
+              <p className="text-sm font-medium text-zinc-700">
+                {filter === "all"
+                  ? "還沒有待辦事項"
+                  : filter === "active"
+                    ? "沒有未完成項目"
+                    : "沒有已完成項目"}
+              </p>
+              <p className="mt-1 text-xs text-zinc-500">
+                從上方輸入框新增第一筆吧。
+              </p>
             </li>
           ) : (
             visibleTodos.map((todo) => (
               <li
                 key={todo.id}
-                className="flex items-center gap-3 rounded-xl border border-slate-100 bg-slate-50 px-3 py-2.5"
+                className="flex items-center gap-3 px-4 py-3 transition hover:bg-zinc-50"
               >
-                <input
-                  type="checkbox"
-                  checked={todo.completed}
-                  onChange={() => toggleTodo(todo.id)}
-                  aria-label={`標記「${todo.text}」為${todo.completed ? "未完成" : "已完成"}`}
-                  className="h-4 w-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500"
-                />
+                <button
+                  type="button"
+                  onClick={() => toggleTodo(todo.id)}
+                  aria-label={todo.completed ? "標記為未完成" : "標記為完成"}
+                  className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full border transition ${
+                    todo.completed
+                      ? "border-indigo-600 bg-indigo-600 text-white"
+                      : "border-zinc-300 bg-white text-transparent hover:border-indigo-400"
+                  }`}
+                >
+                  ✓
+                </button>
                 <span
                   className={`flex-1 text-sm ${
                     todo.completed
-                      ? "text-slate-400 line-through"
-                      : "text-slate-800"
+                      ? "text-zinc-400 line-through"
+                      : "text-zinc-800"
                   }`}
                 >
                   {todo.text}
@@ -156,8 +160,7 @@ export default function TodoApp() {
                 <button
                   type="button"
                   onClick={() => deleteTodo(todo.id)}
-                  className="rounded-lg px-2 py-1 text-xs text-slate-500 transition hover:bg-white hover:text-red-600"
-                  aria-label={`刪除「${todo.text}」`}
+                  className="rounded-lg px-2 py-1 text-xs font-medium text-rose-600 transition hover:bg-rose-50"
                 >
                   刪除
                 </button>
@@ -166,20 +169,11 @@ export default function TodoApp() {
           )}
         </ul>
 
-        <footer className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4 text-xs text-slate-500">
-          <span>
-            共 {todos.length} 項 · 待完成 {activeCount} 項
-          </span>
-          <button
-            type="button"
-            onClick={clearCompleted}
-            disabled={completedCount === 0}
-            className="rounded-lg px-2 py-1 transition enabled:hover:bg-slate-100 enabled:hover:text-slate-700 disabled:cursor-not-allowed disabled:opacity-40"
-          >
-            清除已完成
-          </button>
+        <footer className="flex items-center justify-between border-t border-zinc-200 bg-zinc-50 px-4 py-3 text-xs text-zinc-500">
+          <span>共 {todos.length} 項</span>
+          <span>{activeCount} 項待完成</span>
         </footer>
-      </div>
-    </main>
+      </section>
+    </div>
   );
 }

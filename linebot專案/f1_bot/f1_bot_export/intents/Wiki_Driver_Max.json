@@ -1,0 +1,82 @@
+{
+  "id": "df8ee473-a22b-48f4-bd1e-6b8f789a5754",
+  "name": "Wiki_Driver_Max",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Max Verstappen (Red Bull) #1\n[2025 世界冠軍 (五連霸)]\n總積分：420 pts\n評價：無視隊友 Yuki 被開除的風波，Max 依然是圍場內最無情的勝利機器。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "4092f80d-5fd1-423a-af49-f76adb7374d2",
+      "data": [
+        {
+          "text": "max",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "fbe8433f-165d-4d7c-a4df-00ae258e6b01",
+      "data": [
+        {
+          "text": "介紹 max",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "efffb3dd-8db5-414a-aa86-d91ea3b1ffb1",
+      "data": [
+        {
+          "text": "max 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "886fb274-3640-492f-b8e8-d2f5c1db896b",
+      "data": [
+        {
+          "text": "車手 max",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "e2f8f648-a7a0-4945-900c-a2d620d003c3",
+  "name": "Wiki_Driver_Gabriel",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Gabriel Bortoleto (Sauber) #5\n年度排名：P18\n評價：F2 冠軍的實力展現。雖然賽車競爭力不足，但展現了比前任更強的單圈能力。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "66d569db-160f-465d-a461-5978dc1b74d3",
+      "data": [
+        {
+          "text": "gabriel",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "8d1a96f1-1e76-43e7-85a2-28d31a8249d5",
+      "data": [
+        {
+          "text": "介紹 gabriel",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "485fc88e-9ee4-40f8-a280-cf05c2b4db10",
+      "data": [
+        {
+          "text": "gabriel 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "ffaa6a44-e8e2-4d1c-9388-ecf5325a0273",
+      "data": [
+        {
+          "text": "車手 gabriel",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

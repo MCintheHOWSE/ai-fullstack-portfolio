@@ -1,0 +1,56 @@
+{
+  "id": "9aba68c0-4e25-4a2b-a30b-1a4213afde5a",
+  "name": "Menu_SeasonSummary",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "[2025 F1 賽季總結]\n------------------\n年度車手冠軍：Max Verstappen (Red Bull)\n年度車隊冠軍：McLaren F1 Team\n年度最佳新秀：Kimi Antonelli (Mercedes)\n賽季焦點：2025 開幕戰在澳洲回歸，以及 Lewis Hamilton 在法拉利的主場蒙扎 (Monza) 奪冠的歷史性時刻。\n數據概覽：24 場分站，競爭激烈，由 McLaren 終結了 Red Bull 的車隊連霸。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "87aac993-86ff-42d1-992c-4a288880dde1",
+      "data": [
+        {
+          "text": "最終戰績",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "ab19be60-a730-4bca-9704-dda2cd01a716",
+      "data": [
+        {
+          "text": "賽季總結",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

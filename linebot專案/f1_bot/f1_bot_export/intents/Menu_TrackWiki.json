@@ -1,0 +1,94 @@
+{
+  "id": "f7540f0d-99b9-4954-aeaf-f56cd65d6435",
+  "name": "Menu_TrackWiki",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "[F1 賽道資訊索引]\n你想查詢哪個賽道？請輸入，例如：\n\n- 介紹鈴鹿 (日本經典)\n- 介紹摩納哥 (皇冠明珠)\n- 介紹銀石 (F1發源地)\n- 介紹賭城 (拉斯維加斯)"
+        },
+        {
+          "type": 4,
+          "lang": "zh-tw",
+          "payload": {
+            "line": {
+              "type": "text",
+              "text": "[F1 賽道資訊索引]\n你想查詢哪個賽道？請輸入，例如：\n\n- 介紹鈴鹿 (日本經典)\n- 介紹摩納哥 (皇冠明珠)\n- 介紹銀石 (F1發源地)\n- 介紹賭城 (拉斯維加斯)",
+              "quickReply": {
+                "items": [
+                  {
+                    "type": "action",
+                    "action": {
+                      "type": "message",
+                      "label": "摩納哥",
+                      "text": "介紹摩納哥"
+                    }
+                  },
+                  {
+                    "type": "action",
+                    "action": {
+                      "type": "message",
+                      "label": "鈴鹿",
+                      "text": "介紹鈴鹿"
+                    }
+                  },
+                  {
+                    "type": "action",
+                    "action": {
+                      "type": "message",
+                      "label": "銀石",
+                      "text": "介紹銀石"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "7c8d7b1e-cccd-41e5-8a9f-7de319d837d6",
+      "data": [
+        {
+          "text": "賽道資訊",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "1f9a6c10-ca9e-417a-8255-889dbe986735",
+      "data": [
+        {
+          "text": "賽道介紹",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

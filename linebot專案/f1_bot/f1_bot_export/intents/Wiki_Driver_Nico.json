@@ -1,0 +1,82 @@
+{
+  "id": "fb2d1d23-e66e-428d-bf88-3104fd576ece",
+  "name": "Wiki_Driver_Nico",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Nico Hulkenberg (Sauber) #27\n年度排名：P17\n評價：為了 Audi 而戰。利用豐富經驗協助車隊過渡到 2026 新規。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "aa239fc1-4587-4558-9dc0-4d2f5d3d94ec",
+      "data": [
+        {
+          "text": "nico",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "2989a5eb-d623-47d2-981e-d09e97b6c6ac",
+      "data": [
+        {
+          "text": "介紹 nico",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "b522f116-d327-457a-85c1-bc39a6bb7123",
+      "data": [
+        {
+          "text": "nico 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "1bbf3239-e08c-4a08-bae8-58e5a0e248a7",
+      "data": [
+        {
+          "text": "車手 nico",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

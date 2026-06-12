@@ -1,0 +1,82 @@
+{
+  "id": "51ececa1-32d2-4b61-90bb-ca92322bf529",
+  "name": "Wiki_Driver_Jack",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Jack Doohan (Alpine) #7\n年度排名：P20\n評價：艱困的新人年。在車隊混亂中努力學習，期待 2026 的改制。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "e5bef730-a5f4-4795-a54c-e23cb0b69ff6",
+      "data": [
+        {
+          "text": "jack",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "f60ee965-703e-4e08-b8c1-5189ebd937b2",
+      "data": [
+        {
+          "text": "介紹 jack",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "67ed60f6-f059-4977-a401-c7f8492aede1",
+      "data": [
+        {
+          "text": "jack 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "c26cac93-5b86-4e75-9651-ba2b3bde0b22",
+      "data": [
+        {
+          "text": "車手 jack",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

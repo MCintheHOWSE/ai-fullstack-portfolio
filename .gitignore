@@ -10,13 +10,15 @@ __pycache__/
 .env
 .env.*
 
-# OS
+# OS & OneDrive conflict copies
 .DS_Store
 Thumbs.db
+*-MCFU.*
 
 # Personal / temp
 我的大學學生證.jpg
-大四專題/_slide_extract.txt
+Untitled*.txt
 
-# Large media (GitHub 建議單檔 < 50MB；影片可改放雲端連結)
+# Large media (GitHub 建議單檔 < 50MB；影片改放雲端)
 *.mp4
+*.mkv

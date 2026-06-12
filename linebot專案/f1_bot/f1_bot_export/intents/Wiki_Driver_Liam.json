@@ -1,0 +1,82 @@
+{
+  "id": "3fca0e84-120a-4870-a9bb-57c1afd8415f",
+  "name": "Wiki_Driver_Liam",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Liam Lawson (RB) #30\n年度排名：P11\n評價：紅牛體系的下個希望。在 Yuki 離隊後，他成為了爭奪未來紅牛席位的頭號人選。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "f46f4640-3370-4f91-9417-b2d96dc3e735",
+      "data": [
+        {
+          "text": "liam",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "58e384b5-3ab2-465f-a960-e93fe5609e93",
+      "data": [
+        {
+          "text": "介紹 liam",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "828c9e12-fe96-4253-83c3-62c518f89a0a",
+      "data": [
+        {
+          "text": "liam 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "6a7ba1ea-6be6-4f49-8ce9-9ef4588d31cb",
+      "data": [
+        {
+          "text": "車手 liam",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

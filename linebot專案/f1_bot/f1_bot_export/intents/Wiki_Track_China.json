@@ -1,0 +1,69 @@
+{
+  "id": "9a68d1c6-098e-46c1-a99b-81dadc7fe752",
+  "name": "Wiki_Track_China",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "中國 (Shanghai)\n特點：前輪殺手。1號彎的螺旋彎是輪胎管理的惡夢。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "4568ae7d-b60c-4b66-a9d8-4799a5b27f19",
+      "data": [
+        {
+          "text": "china",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "26438a96-4318-4d4d-a4bf-8ced4da6c237",
+      "data": [
+        {
+          "text": "介紹 china",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "1df43ac8-2dbe-4f11-9d3a-2269903b030e",
+      "data": [
+        {
+          "text": "china 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

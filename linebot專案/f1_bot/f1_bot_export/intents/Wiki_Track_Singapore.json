@@ -1,0 +1,69 @@
+{
+  "id": "d6ffc8e9-8699-4ed1-8287-7bf959598857",
+  "name": "Wiki_Track_Singapore",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "新加坡 (Marina Bay)\n特點：亞洲夜賽。高溫高濕的體能地獄。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "8467d2e6-c489-4a05-aecb-5fc3d22e6693",
+      "data": [
+        {
+          "text": "singapore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "e55b4665-85d9-4181-8880-e2235e2face7",
+      "data": [
+        {
+          "text": "介紹 singapore",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "6c50acdb-2eea-40a1-a60a-ce831389533f",
+      "data": [
+        {
+          "text": "singapore 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

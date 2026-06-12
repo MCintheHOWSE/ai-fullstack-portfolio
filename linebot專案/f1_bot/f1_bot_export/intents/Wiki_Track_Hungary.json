@@ -1,0 +1,69 @@
+{
+  "id": "4eb62775-a3e8-4539-9523-93154d07c778",
+  "name": "Wiki_Track_Hungary",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "匈牙利 (Hungaroring)\n特點：沒有牆的摩納哥。超車極為困難。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "cccefeaf-6b46-4428-b0c4-54f7f567afe7",
+      "data": [
+        {
+          "text": "hungary",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "9b7821f3-82b1-4135-8244-1059df51c8f8",
+      "data": [
+        {
+          "text": "介紹 hungary",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "961fd7f1-c22b-4d65-ac49-6cab8e72eec3",
+      "data": [
+        {
+          "text": "hungary 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

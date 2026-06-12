@@ -1,0 +1,82 @@
+{
+  "id": "f815b936-c9a5-4f9c-9299-ecfda089f61f",
+  "name": "Wiki_Driver_Lewis",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Lewis Hamilton (Ferrari) #44\n年度排名：P3\n評價：紅袍 Lewis 煥發第二春。他在 Monza 的勝利讓全義大利為之瘋狂，證明了他轉隊的決定是正確的。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "15b3711a-b056-4a4a-b5da-607a29511ca2",
+      "data": [
+        {
+          "text": "lewis",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "26b44f96-2923-44de-b02f-5c33faab2df4",
+      "data": [
+        {
+          "text": "介紹 lewis",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "7a6bb9c9-466f-4dd5-9c6e-6c6124214a5b",
+      "data": [
+        {
+          "text": "lewis 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "47aa394e-1552-4c65-a229-37325f9f0b62",
+      "data": [
+        {
+          "text": "車手 lewis",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

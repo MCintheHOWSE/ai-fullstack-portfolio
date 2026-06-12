@@ -1,0 +1,94 @@
+{
+  "id": "b415c344-157f-4df4-a1e5-56a206b7f5c8",
+  "name": "Menu_TeamWiki",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "[F1 賽車與車隊索引]\n想看哪台火星車？請輸入，例如：\n\n- 紅牛車隊 (RB21)\n- 法拉利 (SF-25)\n- 麥拉倫 (MCL39)"
+        },
+        {
+          "type": 4,
+          "lang": "zh-tw",
+          "payload": {
+            "line": {
+              "type": "text",
+              "text": "[F1 賽車與車隊索引]\n想看哪台火星車？請輸入，例如：\n\n- 紅牛車隊 (RB21)\n- 法拉利 (SF-25)\n- 麥拉倫 (MCL39)",
+              "quickReply": {
+                "items": [
+                  {
+                    "type": "action",
+                    "action": {
+                      "type": "message",
+                      "label": "紅牛",
+                      "text": "紅牛車隊"
+                    }
+                  },
+                  {
+                    "type": "action",
+                    "action": {
+                      "type": "message",
+                      "label": "法拉利",
+                      "text": "法拉利車隊"
+                    }
+                  },
+                  {
+                    "type": "action",
+                    "action": {
+                      "type": "message",
+                      "label": "麥拉倫",
+                      "text": "麥拉倫車隊"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "a8bf4f03-bf77-42e2-87f1-c26b46bda309",
+      "data": [
+        {
+          "text": "賽車介紹",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "ac98e3d6-dd4c-46b1-af96-688e5fdffcbc",
+      "data": [
+        {
+          "text": "車隊介紹",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

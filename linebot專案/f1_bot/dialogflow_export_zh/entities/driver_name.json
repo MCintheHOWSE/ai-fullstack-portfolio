@@ -1,0 +1,9 @@
+{
+  "id": "ba249d77-739c-4fe8-96a1-033de0a3f26c",
+  "name": "driver_name",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}

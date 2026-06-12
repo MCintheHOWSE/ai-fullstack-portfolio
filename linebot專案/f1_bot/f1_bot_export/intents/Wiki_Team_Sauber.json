@@ -1,0 +1,69 @@
+{
+  "id": "a0a0f205-ba7d-4fd4-8b18-1694579535cb",
+  "name": "Wiki_Team_Sauber",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Stake F1 Team Kick Sauber (C45)\n------------------\n2025 車手：Nico Hulkenberg, Gabriel Bortoleto\n動力：Ferrari 066/14\n賽季結算：\nAudi 進駐前的最後準備。F2 冠軍 Bortoleto 表現亮眼，Hulkenberg 經驗豐富，為明年轉型 Audi 打下基礎。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "ccbf6d42-e511-4e45-8bc1-a937a94ebdbd",
+      "data": [
+        {
+          "text": "sauber",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "1f697cf1-dd48-42c7-8aec-317b0241a2c2",
+      "data": [
+        {
+          "text": "介紹 sauber",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "e73153b2-4613-455f-bed6-eafcccb80121",
+      "data": [
+        {
+          "text": "sauber 車隊",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "11d3680f-ba6d-474d-b488-e7d11839ec95",
+  "name": "track_name",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}

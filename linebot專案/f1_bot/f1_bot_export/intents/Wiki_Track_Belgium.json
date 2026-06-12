@@ -1,0 +1,69 @@
+{
+  "id": "48653137-d506-48d3-b0a5-82a28220c642",
+  "name": "Wiki_Track_Belgium",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "比利時 (Spa)\n特點：最長單圈。Eau Rouge 彎道是賽車界最經典的畫面。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "5a3fe19e-5424-42fd-8570-c7dba61dc681",
+      "data": [
+        {
+          "text": "belgium",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "e0f3885c-458b-4f43-aeab-65663c3ae6cc",
+      "data": [
+        {
+          "text": "介紹 belgium",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "27d4306a-b344-4c01-973d-d34e923ceac1",
+      "data": [
+        {
+          "text": "belgium 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "ecda68c9-0f25-4b23-a948-3a792d544f53",
+  "name": "Wiki_Track_Uk",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "英國 (Silverstone)\n特點：F1 發源地。高速彎 Maggotts-Becketts 是底盤性能的極限。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "37d5e3df-9a18-464d-a24d-0a1806847650",
+      "data": [
+        {
+          "text": "uk",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "d45b1c9f-80bb-48a9-8036-033ae6e191f6",
+      "data": [
+        {
+          "text": "介紹 uk",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "fcc43a63-674a-42ff-be38-21e1b92db2d6",
+      "data": [
+        {
+          "text": "uk 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

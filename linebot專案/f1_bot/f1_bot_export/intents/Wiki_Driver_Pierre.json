@@ -1,0 +1,82 @@
+{
+  "id": "6eab8301-7e5c-4f68-8467-f82aaf5f57fd",
+  "name": "Wiki_Driver_Pierre",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Pierre Gasly (Alpine) #10\n年度排名：P19\n評價：痛苦的一年。Alpine 的管理層動盪與引擎劣勢讓他無力回天。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "f44a8f36-1cca-4e13-ac5c-21d42c435673",
+      "data": [
+        {
+          "text": "pierre",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "4d451a39-5f39-452f-81fe-b406729def2c",
+      "data": [
+        {
+          "text": "介紹 pierre",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "1dd4dedf-57fb-40c9-99c2-358be2c55e57",
+      "data": [
+        {
+          "text": "pierre 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "edc8f828-317d-4cb0-b9dc-02b10c0f9175",
+      "data": [
+        {
+          "text": "車手 pierre",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

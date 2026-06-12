@@ -1,0 +1,82 @@
+{
+  "id": "d016f4ce-9cdb-4944-8638-98957188a15d",
+  "name": "Wiki_Driver_Lance",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Lance Stroll (Aston Martin) #18\n年度排名：P13\n評價：位置依然穩固，但在 Alonso 面前仍顯得速度不足。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "e6bf5d74-d9fb-4400-8061-c109c230df02",
+      "data": [
+        {
+          "text": "lance",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "22300112-81ad-436c-a760-570c7d86fd01",
+      "data": [
+        {
+          "text": "介紹 lance",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "551d0db0-9b40-4dae-b0a0-15c449fce3a6",
+      "data": [
+        {
+          "text": "lance 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "c1b796b6-b9e6-4799-baca-cb8bc80b8f3e",
+      "data": [
+        {
+          "text": "車手 lance",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

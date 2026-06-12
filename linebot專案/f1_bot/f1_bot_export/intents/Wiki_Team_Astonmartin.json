@@ -1,0 +1,69 @@
+{
+  "id": "0071d7b6-d575-4bf7-87e2-f16aec195e07",
+  "name": "Wiki_Team_Astonmartin",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Aston Martin Aramco F1 (AMR25)\n------------------\n2025 車手：Fernando Alonso, Lance Stroll\n動力：Mercedes-AMG\n賽季結算：\nAdrian Newey 加盟後的過渡期。Alonso 依然老當益壯，但車隊整體研發方向仍在調整中。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "72c9457d-2922-488f-8e91-dff7aa7b2c1d",
+      "data": [
+        {
+          "text": "astonmartin",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "40444db3-fd3a-4329-bbce-e2558cb26e4f",
+      "data": [
+        {
+          "text": "介紹 astonmartin",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "42f96f50-51d1-4894-81bc-dceb6d4126b6",
+      "data": [
+        {
+          "text": "astonmartin 車隊",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

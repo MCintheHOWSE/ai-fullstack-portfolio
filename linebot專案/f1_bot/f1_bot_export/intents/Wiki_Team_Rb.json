@@ -1,0 +1,69 @@
+{
+  "id": "6d5e999b-1282-4305-81dc-6c94705d3bef",
+  "name": "Wiki_Team_Rb",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Visa Cash App RB (VCARB 02)\n------------------\n2025 車手：Liam Lawson, Isack Hadjar\n動力：Honda RBPTH003\n賽季結算：\n全新的紅牛青訓陣容。Lawson 扛起大旗，Hadjar 則在適應 F1 的節奏。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "6bb67e7d-89f6-4579-82fe-3cdf5f746098",
+      "data": [
+        {
+          "text": "rb",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "54b236b9-c05b-47df-8729-732350e54eb9",
+      "data": [
+        {
+          "text": "介紹 rb",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "5e3fbf7a-27d0-4c64-bece-65b8dc55b339",
+      "data": [
+        {
+          "text": "rb 車隊",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

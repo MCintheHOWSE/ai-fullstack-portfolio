@@ -1,0 +1,9 @@
+{
+  "id": "baca0535-5650-49b9-afc3-c595c9a56b43",
+  "name": "driver_name",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": true
+}

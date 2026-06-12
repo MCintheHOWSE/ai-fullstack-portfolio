@@ -1,0 +1,69 @@
+{
+  "id": "df210615-3745-4558-94c2-558c040c9e6a",
+  "name": "Wiki_Track_Brazil",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "巴西 (Interlagos)\n特點：冼拿的故鄉。天氣多變，常有雨戰驚喜。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "3d6b616a-8fd5-43f3-9700-aab8129d1657",
+      "data": [
+        {
+          "text": "brazil",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "a1788a23-b7cf-4c95-a3c7-958f5863f3c7",
+      "data": [
+        {
+          "text": "介紹 brazil",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "789b7a40-f7d5-4e12-9570-1de07d884f66",
+      "data": [
+        {
+          "text": "brazil 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}
