@@ -1,4 +1,4 @@
-# Week 01 — AI 工程師準備計畫 ✅ 已完成
+# Phase 1 — AI 工程師準備計畫 ✅ 已完成
 
 目標：熟悉 **Cursor + Git + Next.js + Tailwind + Vercel**，完成第一個可部署的 Todo App，建立「AI 生成 → 人工 review → 修正 → 上線」的工作流。
 
@@ -10,7 +10,7 @@
 
 ## 本週交付成果
 
-- [x] Next.js 專案 scaffold（`my-first-ai-app/`）
+- [x] Next.js 專案 scaffold（`todo-app/`）
 - [x] 可運作的 Todo App（新增、刪除、完成切換、localStorage、批量新增、清除已完成）
 - [x] GitHub repo + 至少 3 次有意義的 commit
 - [x] Vercel 部署 + live demo URL
@@ -45,7 +45,7 @@
 - [x] 配色、間距、hover、陰影卡片
 - [x] 375px mobile 版面
 - [x] Esc 清空輸入 + 提示文字
-- [x] 截圖 → `my-first-ai-app/docs/screenshot.svg`
+- [x] 截圖 → `docs/screenshot.svg`
 
 ### Day 5 — AI Code Review 練習 ✅
 
@@ -56,7 +56,7 @@
 ### Day 6 — 部署到 Vercel ✅
 
 - [x] `npm run build` 成功
-- [x] Vercel 部署（Root: `week-01/my-first-ai-app`）
+- [x] Vercel 部署（Root: `todo-app`）
 - [x] Live URL 寫進 README
 - [x] 手機實測
 
@@ -64,7 +64,7 @@
 
 - [x] README 補齊技術棧、AI workflow、live demo
 - [x] 3 分鐘自我 demo
-- [x] 複盤寫入 `my-first-ai-app/README.md`
+- [x] 複盤寫入 `README.md`
 - [ ] （可選）放進履歷 / Notion
 
 ---
@@ -87,26 +87,23 @@
 ## 專案位置
 
 ```
-week-01/
-├── README.md                 ← 本文件（7 天計畫）
-├── PROMPTS.md                ← Cursor prompt 範本
-└── my-first-ai-app/          ← Next.js Todo App
-    ├── README.md             ← 專案說明 + AI workflow + 複盤
-    ├── docs/screenshot.svg
-    └── src/
+todo-app/
+├── README.md                 ← 專案總覽
+├── docs/phase-01-plan.md     ← 本文件
+└── src/
 ```
 
 本地執行：
 
 ```bash
-cd week-01/my-first-ai-app
+cd todo-app
 npm install
 npm run dev
 ```
 
 ---
 
-## Week 2 預告
+## Phase 2 預告
 
 - Next.js + **Supabase Auth**
 - localStorage → **PostgreSQL**

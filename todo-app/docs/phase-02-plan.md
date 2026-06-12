@@ -1,6 +1,6 @@
-# Week 02 — Todo SaaS（Supabase 版）✅ 已完成
+# Phase 2 — Todo SaaS（Supabase 版）✅ 已完成
 
-目標：把 Week 01 的 localStorage Todo，升級成 **登入後跨裝置同步** 的 mini SaaS。
+目標：把 Phase 1 的 localStorage Todo，升級成 **登入後跨裝置同步** 的 mini SaaS。
 
 **技術：** Next.js 16 + Supabase Auth + PostgreSQL + RLS
 
@@ -27,22 +27,21 @@
 | 4 | RLS / 安全 | ✅（schema + 雙帳號可自測） |
 | 5 | UX / 錯誤處理 | ✅ |
 | 6 | Vercel 部署 | 待你做 |
-| 7 | 複盤 | ✅（見 `todo-saas/README.md`） |
+| 7 | 複盤 | ✅（見 `todo-app/README.md`） |
 
 ---
 
 ## 專案位置
 
 ```
-week-02/
+todo-app/
 ├── README.md
-├── SETUP-SUPABASE.md
-├── PROMPTS.md
-└── todo-saas/
+├── docs/
+└── src/
 ```
 
 ```bash
-cd week-02/todo-saas
+cd todo-app
 npm.cmd run dev
 ```
 
@@ -50,16 +49,16 @@ npm.cmd run dev
 
 ## 部署（Day 6）
 
-1. `git add week-02/ && git commit && git push`
-2. Vercel → Root Directory：`week-02/todo-saas`
+1. `git add todo-app/ && git commit && git push`
+2. Vercel → Root Directory：`todo-app`
 3. 加 Supabase 環境變數
 4. Supabase Auth URL 設定加入 Vercel domain
 
 ---
 
-## Week 01 vs Week 02
+## Phase 1 vs Phase 2
 
-| 面向 | Week 01 | Week 02 |
+| 面向 | Phase 1 | Phase 2 |
 |------|---------|---------|
 | 儲存 | localStorage | PostgreSQL |
 | 登入 | 無 | Supabase Auth |

@@ -1,14 +1,20 @@
 "use client";
 
 import Link from "next/link";
-import { FormEvent, useCallback, useEffect, useMemo, useState } from "react";
+import {
+  FormEvent,
+  KeyboardEvent,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import type { User } from "@supabase/supabase-js";
 import { createClient } from "@/lib/supabase/client";
 import {
   deleteCompletedTodos,
   deleteTodoById,
   fetchTodos,
-  insertTodo,
   insertTodos,
   updateTodoCompleted,
 } from "@/lib/todo-repository";
@@ -32,7 +38,6 @@ export default function TodoApp() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [input, setInput] = useState("");
-  const [bulkInput, setBulkInput] = useState("");
   const [filter, setFilter] = useState<TodoFilter>("all");
   const [busy, setBusy] = useState(false);
 
@@ -82,7 +87,6 @@ export default function TodoApp() {
     function handleKeyDown(event: KeyboardEvent) {
       if (event.key !== "Escape") return;
       setInput("");
-      setBulkInput("");
     }
 
     window.addEventListener("keydown", handleKeyDown);
@@ -96,7 +100,7 @@ export default function TodoApp() {
 
   const activeCount = todos.filter((todo) => !todo.completed).length;
   const completedCount = todos.length - activeCount;
-  const bulkLineCount = parseBulkTodoLines(bulkInput).length;
+  const lineCount = parseBulkTodoLines(input).length;
   const canEdit = Boolean(user) && !busy;
 
   async function runAction(action: () => Promise<void>) {
@@ -115,14 +119,21 @@ export default function TodoApp() {
     event.preventDefault();
     if (!user) return;
 
-    const trimmed = input.trim();
-    if (!trimmed) return;
+    const lines = parseBulkTodoLines(input);
+    if (lines.length === 0) return;
 
     await runAction(async () => {
-      const created = await insertTodo(trimmed, user.id);
-      setTodos((current) => [created, ...current]);
+      const created = await insertTodos(lines, user.id);
+      setTodos((current) => [...created, ...current]);
       setInput("");
     });
+  }
+
+  function handleInputKeyDown(event: KeyboardEvent<HTMLTextAreaElement>) {
+    if (event.key === "Enter" && !event.shiftKey) {
+      event.preventDefault();
+      event.currentTarget.form?.requestSubmit();
+    }
   }
 
   async function toggleTodo(id: string) {
@@ -150,20 +161,6 @@ export default function TodoApp() {
     await runAction(async () => {
       await deleteCompletedTodos();
       setTodos((current) => current.filter((todo) => !todo.completed));
-    });
-  }
-
-  async function handleBulkSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    if (!user) return;
-
-    const lines = parseBulkTodoLines(bulkInput);
-    if (lines.length === 0) return;
-
-    await runAction(async () => {
-      const created = await insertTodos(lines, user.id);
-      setTodos((current) => [...created, ...current]);
-      setBulkInput("");
     });
   }
 
@@ -204,69 +201,37 @@ export default function TodoApp() {
       <section className="overflow-hidden rounded-2xl border border-zinc-200/80 bg-white shadow-lg shadow-indigo-100/50 ring-1 ring-zinc-100">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col gap-3 border-b border-zinc-100 bg-zinc-50/50 p-4 sm:flex-row"
+          className="flex flex-col gap-3 border-b border-zinc-100 bg-zinc-50/50 p-4"
         >
-          <input
-            type="text"
+          <textarea
             value={input}
             onChange={(event) => setInput(event.target.value)}
+            onKeyDown={handleInputKeyDown}
+            rows={2}
             placeholder={
-              user ? "輸入待辦事項，按 Enter 新增..." : "請先登入再新增待辦"
+              user
+                ? "輸入一筆待辦，或每行一筆貼上多行…"
+                : "請先登入再新增待辦"
             }
             disabled={!canEdit}
             aria-label="新增待辦事項"
-            className="min-h-11 flex-1 rounded-xl border border-zinc-300 bg-white px-4 py-3 text-sm text-zinc-900 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 disabled:cursor-not-allowed disabled:bg-zinc-100"
+            className="min-h-11 resize-y rounded-xl border border-zinc-300 bg-white px-4 py-3 text-sm text-zinc-900 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 disabled:cursor-not-allowed disabled:bg-zinc-100"
           />
-          <button
-            type="submit"
-            disabled={!canEdit}
-            className="min-h-11 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 active:scale-[0.98] disabled:cursor-not-allowed disabled:bg-zinc-300"
-          >
-            新增
-          </button>
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-[11px] text-zinc-400">
+              Enter 新增 · Shift+Enter 換行 · Esc 清空
+              {lineCount > 1 ? ` · 將新增 ${lineCount} 筆` : ""}
+              {busy ? " · 同步中..." : ""}
+            </p>
+            <button
+              type="submit"
+              disabled={!canEdit || lineCount === 0}
+              className="min-h-11 shrink-0 rounded-xl bg-indigo-600 px-5 py-3 text-sm font-medium text-white transition hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 active:scale-[0.98] disabled:cursor-not-allowed disabled:bg-zinc-300"
+            >
+              {lineCount > 1 ? `新增 ${lineCount} 筆` : "新增"}
+            </button>
+          </div>
         </form>
-
-        <p className="border-b border-zinc-100 px-4 py-2 text-[11px] text-zinc-400">
-          快捷鍵：Enter 新增 · Esc 清空輸入
-          {busy ? " · 同步中..." : ""}
-        </p>
-
-        <details className="group border-b border-zinc-100 px-4 py-3">
-          <summary className="cursor-pointer list-none text-xs font-medium text-indigo-600 transition hover:text-indigo-500 [&::-webkit-details-marker]:hidden">
-            <span className="inline-flex items-center gap-1">
-              <span className="transition group-open:rotate-90">▸</span>
-              批量新增（貼上多行文字）
-            </span>
-          </summary>
-          <form
-            onSubmit={handleBulkSubmit}
-            className="mt-3 flex flex-col gap-2"
-          >
-            <textarea
-              value={bulkInput}
-              onChange={(event) => setBulkInput(event.target.value)}
-              rows={4}
-              disabled={!canEdit}
-              placeholder={"每行一筆待辦，例如：\n買牛奶\n寫 README\nReview PR"}
-              aria-label="批量新增待辦事項"
-              className="resize-y rounded-xl border border-zinc-300 bg-white px-4 py-3 text-sm text-zinc-900 outline-none transition focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100 disabled:cursor-not-allowed disabled:bg-zinc-100"
-            />
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-              <p className="text-xs text-zinc-500">
-                {bulkLineCount > 0
-                  ? `將新增 ${bulkLineCount} 筆（已略過空行與重複）`
-                  : "空行會自動略過"}
-              </p>
-              <button
-                type="submit"
-                disabled={!canEdit || bulkLineCount === 0}
-                className="min-h-9 rounded-xl bg-indigo-600 px-4 py-2 text-xs font-medium text-white transition hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:cursor-not-allowed disabled:bg-zinc-300"
-              >
-                新增多筆
-              </button>
-            </div>
-          </form>
-        </details>
 
         <div className="flex flex-col gap-2 border-b border-zinc-100 px-4 py-3 sm:flex-row sm:flex-wrap sm:items-center">
           <div className="flex flex-wrap gap-2">

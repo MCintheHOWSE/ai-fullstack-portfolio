@@ -1,4 +1,4 @@
-# Supabase 設定指南 — Week 02
+# Supabase 設定指南 — Phase 2
 
 ## 目前狀態
 
@@ -16,7 +16,7 @@
 
 1. 到 [supabase.com](https://supabase.com) 註冊 / 登入
 2. **New Project**
-   - Name：`todo-saas`（或自訂）
+   - Name：`todo-app`（或自訂）
    - Database Password：記下來（之後很少用到）
    - Region：選離你最近的（例如 Northeast Asia）
 3. 等專案建立完成（約 1–2 分鐘）
@@ -122,7 +122,7 @@ Supabase → **Authentication** → **URL Configuration**：
 
 ---
 
-## Week 2 程式已完成
+## Phase 2 程式已完成
 
 Todo 已改為 Supabase CRUD。本地測試：
 

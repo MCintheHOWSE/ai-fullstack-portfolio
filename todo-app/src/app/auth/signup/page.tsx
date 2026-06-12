@@ -45,7 +45,7 @@ export default function SignupPage() {
     <main className="flex min-h-screen items-center justify-center bg-gradient-to-b from-indigo-50 via-white to-white px-4">
       <section className="w-full max-w-md rounded-2xl border border-zinc-200 bg-white p-6 shadow-lg shadow-indigo-100/50">
         <h1 className="text-xl font-bold text-zinc-900">註冊</h1>
-        <p className="mt-1 text-sm text-zinc-600">建立 Week 02 Todo 帳號</p>
+        <p className="mt-1 text-sm text-zinc-600">建立 Todo App 帳號</p>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <div>

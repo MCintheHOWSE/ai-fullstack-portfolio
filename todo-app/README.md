@@ -1,62 +1,53 @@
 # Todo App
 
-單一作品集專案，內含 **Week 1 → Week 2** 的完整演進：從 localStorage 入門，升級到 Supabase 登入 + 雲端同步。
+**所有與此專案相關的內容都在這個資料夾** — 程式碼、Phase 1/2 學習紀錄、Supabase / Git / Vercel 設定、Cursor Prompt。
 
-> **Live Demo：** [https://ai-engineer-preparation.vercel.app](https://ai-engineer-preparation.vercel.app) *(Vercel Root 改為 `todo-app` 後更新)*  
+> **Live Demo：** [https://ai-engineer-preparation.vercel.app](https://ai-engineer-preparation.vercel.app)  
 > **GitHub：** [MCintheHOWSE/ai-engineer-preparation](https://github.com/MCintheHOWSE/ai-engineer-preparation)
 
 ![Mobile preview](./docs/screenshot.svg)
 
 ---
 
-## 目前功能（最新版 = Week 2）
+## 專案演進
 
-- Email 註冊 / 登入 / 登出
-- Todo CRUD → **Supabase PostgreSQL**
+| 階段 | 重點 | 學習紀錄 |
+|------|------|----------|
+| **Phase 1** | localStorage、AI review、Vercel | [`docs/phase-01-plan.md`](./docs/phase-01-plan.md) |
+| **Phase 2** | Supabase Auth、PostgreSQL、RLS | [`docs/phase-02-plan.md`](./docs/phase-02-plan.md) |
+
+---
+
+## 目前功能（Phase 2）
+
+- 註冊 / 登入 / 登出
+- Todo CRUD（Supabase PostgreSQL）
 - 篩選、批量新增、清除已完成
-- **RLS** 資料隔離（只能看到自己的 todo）
-- Loading、錯誤提示、未登入分流
+- RLS 資料隔離、錯誤提示
 
 ---
 
-## 專案演進（在同一個 repo 裡區分）
-
-| 階段 | 重點 | 技術 | 學習紀錄 |
-|------|------|------|----------|
-| **Week 1** | AI 輔助入門、localStorage | Next.js, Tailwind, localStorage | [`docs/week-01-plan.md`](./docs/week-01-plan.md) |
-| **Week 2** | 升級 mini SaaS、雲端同步 | Supabase Auth, PostgreSQL, RLS | [`docs/week-02-plan.md`](./docs/week-02-plan.md) |
-
-程式碼是**同一條線迭代**：Week 2 在 Week 1 功能上加上 Auth + Supabase，不再維護兩份獨立 app。
-
----
-
-## 技術棧
-
-| 項目 | 選擇 |
-|------|------|
-| 框架 | Next.js 16 (App Router) |
-| 語言 | TypeScript |
-| 樣式 | Tailwind CSS 4 |
-| 認證 | Supabase Auth |
-| 資料庫 | PostgreSQL（Supabase） |
-| 安全 | Row Level Security |
-| 部署 | Vercel |
-
----
-
-## 本地執行
+## 快速開始
 
 ```bash
 cd todo-app
-copy .env.example .env.local   # 填入 Supabase 金鑰
+copy .env.example .env.local
 npm install
-npm.cmd run dev                # Windows PowerShell 用 npm.cmd
+npm.cmd run dev
 ```
 
-- 首頁：http://localhost:3000
-- 註冊：http://localhost:3000/auth/signup
+---
 
-Supabase 設定：[`docs/SETUP-SUPABASE.md`](./docs/SETUP-SUPABASE.md)
+## 文件索引（全在 `docs/`）
+
+| 文件 | 用途 |
+|------|------|
+| [`phase-01-plan.md`](./docs/phase-01-plan.md) | Phase 1 學習計畫與交付 |
+| [`phase-02-plan.md`](./docs/phase-02-plan.md) | Phase 2 學習計畫與交付 |
+| [`SETUP-SUPABASE.md`](./docs/SETUP-SUPABASE.md) | Supabase 專案與金鑰設定 |
+| [`SETUP-GITHUB.md`](./docs/SETUP-GITHUB.md) | Git、GitHub、Vercel 部署 |
+| [`PROMPTS.md`](./docs/PROMPTS.md) | Phase 1 Cursor prompt |
+| [`PROMPTS-phase02.md`](./docs/PROMPTS-phase02.md) | Phase 2 Cursor prompt |
 
 ---
 
@@ -64,14 +55,8 @@ Supabase 設定：[`docs/SETUP-SUPABASE.md`](./docs/SETUP-SUPABASE.md)
 
 ```
 todo-app/
-├── README.md                 ← 本文件（專案總覽）
-├── docs/
-│   ├── week-01-plan.md       ← Week 1 學習計畫與交付
-│   ├── week-02-plan.md       ← Week 2 學習計畫與交付
-│   ├── SETUP-SUPABASE.md     ← Supabase 設定
-│   ├── PROMPTS.md            ← Week 1 Cursor prompt
-│   ├── PROMPTS-week02.md     ← Week 2 Cursor prompt
-│   └── screenshot.svg
+├── README.md              ← 你在這（專案總覽）
+├── docs/                  ← 所有文件
 ├── supabase/schema.sql
 └── src/
     ├── app/auth/
@@ -81,36 +66,9 @@ todo-app/
 
 ---
 
-## AI Workflow 紀錄
+## AI Workflow 摘要
 
-### Week 1 重點修正
+**Phase 1：** hydration 安全、篩選 UX、批量新增 AI review  
+**Phase 2：** localStorage → Supabase、`todo-repository.ts` 分層、RLS
 
-- Hydration 安全（`isReady` + `useEffect` 讀寫 storage）
-- 篩選 tabs、空狀態、資料驗證
-- 批量新增 AI review（`\r\n`、空行、去重）
-
-### Week 2 重點修正
-
-- localStorage → Supabase CRUD
-- 未登入 disable UI
-- CRUD 抽到 `todo-repository.ts`
-- RLS 依賴 `auth.uid()`，不靠前端信任
-
-詳見各週文件與 git commit 歷史。
-
----
-
-## 部署 Vercel
-
-1. Push 到 GitHub
-2. Vercel → Import repo
-3. **Root Directory：** `todo-app`
-4. 環境變數：`NEXT_PUBLIC_SUPABASE_URL`、`NEXT_PUBLIC_SUPABASE_ANON_KEY`
-5. Supabase Auth Redirect：`https://你的網域.vercel.app/auth/callback`
-
----
-
-## Cursor Prompt 範本
-
-- Week 1：[`docs/PROMPTS.md`](./docs/PROMPTS.md)
-- Week 2：[`docs/PROMPTS-week02.md`](./docs/PROMPTS-week02.md)
+詳見各 phase 文件與 git history。

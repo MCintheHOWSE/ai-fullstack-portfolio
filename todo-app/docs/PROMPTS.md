@@ -1,4 +1,4 @@
-# Week 01 — 給 Cursor 的 Prompt 範本
+# Phase 1 — 給 Cursor 的 Prompt 範本
 
 > 把下面範本貼給 Cursor，一次說清楚「要做什麼、改哪裡、不要動什麼、怎麼驗收」。
 
@@ -7,9 +7,9 @@
 ## 一次性完整 Prompt（推薦）
 
 ```
-我在做 Week 01 Todo App（Next.js 16 + TypeScript + Tailwind + localStorage）。
+我在做 Todo App Phase 1（Next.js 16 + TypeScript + Tailwind + localStorage）。
 
-專案路徑：todo-app/（Week 1 階段紀錄，見 docs/week-01-plan.md）
+專案路徑：todo-app/（Phase 1 紀錄，見 docs/phase-01-plan.md）
 主要檔案：
 - src/components/TodoApp.tsx（UI + 互動）
 - src/lib/todos.ts（型別、localStorage、工具函式）
@@ -35,7 +35,7 @@
 - button 要有 aria-label
 
 【交付】
-- 更新 my-first-ai-app/README.md：列出 AI 生成 vs 人工修正
+- 更新 todo-app/README.md：列出 AI 生成 vs 人工修正
 - npm run build 要通過
 - 給我 commit message 建議
 ```

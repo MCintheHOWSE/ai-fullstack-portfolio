@@ -20,5 +20,5 @@
   <rect x="40" y="456" width="310" height="1" fill="#F4F4F5"/>
   <rect x="40" y="472" width="60" height="10" rx="4" fill="#A1A1AA"/>
   <rect x="260" y="472" width="90" height="10" rx="4" fill="#A1A1AA"/>
-  <text x="195" y="700" text-anchor="middle" fill="#71717A" font-family="system-ui,sans-serif" font-size="11">Week 01 Todo App · 375px preview</text>
+  <text x="195" y="700" text-anchor="middle" fill="#71717A" font-family="system-ui,sans-serif" font-size="11">Todo App · 375px preview</text>
 </svg>

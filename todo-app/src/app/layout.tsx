@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Todo App | AI Engineer Prep",
   description:
-    "Todo app: Next.js, Supabase Auth, PostgreSQL, RLS. Evolved from Week 1 localStorage to Week 2 cloud sync.",
+    "Todo app: Next.js, Supabase Auth, PostgreSQL, RLS. Evolved from Phase 1 localStorage to Phase 2 cloud sync.",
 };
 
 export default function RootLayout({
