@@ -15,6 +15,7 @@ Dot to Dot 是全端專案（React + Node.js + SQLite + Socket.io）。已設定
 | Key | 說明 |
 |-----|------|
 | `NODE_ENV` | `production`（render.yaml 已設定） |
+| Build Command | `npm install --include=dev && npm run build`（`NODE_ENV=production` 時必須加 `--include=dev`，否則 Vite 不會安裝） |
 | `JWT_SECRET` | 隨機字串（render.yaml 自動產生） |
 | `CLIENT_URL` | 選填；未設定時會用 `RENDER_EXTERNAL_URL` |
 

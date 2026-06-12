@@ -3,7 +3,7 @@ services:
     name: dot-to-dot
     runtime: node
     rootDir: dot-to-dot
-    buildCommand: npm install && npm run build
+    buildCommand: npm install --include=dev && npm run build
     startCommand: node server/index.js
     envVars:
       - key: NODE_ENV
