@@ -8,7 +8,7 @@ Dot to Dot 是全端專案（React + Node.js + SQLite + Socket.io）。已設定
 2. 前往 [Render Dashboard](https://dashboard.render.com/) → **New** → **Blueprint**
 3. 連接 `MCintheHOWSE/ai-engineer-preparation`
 4. Render 會讀取根目錄 `render.yaml` 並建立服務（`rootDir: dot-to-dot`）
-5. 部署完成後，網址類似：`https://dot-to-dot-xxxx.onrender.com`
+5. 部署完成後取得 Live URL（目前作品集使用）：https://dot-to-dot-1mn5.onrender.com
 
 ### 環境變數（通常自動設定即可）
 
