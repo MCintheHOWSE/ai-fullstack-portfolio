@@ -1,67 +1,28 @@
-# Week 02 — Todo SaaS（Supabase 版）✅ 已完成
+# Week 02 — 學習計畫
 
-目標：把 Week 01 的 localStorage Todo，升級成 **登入後跨裝置同步** 的 mini SaaS。
+> **Todo App 程式碼已整合至單一專案：** [`../todo-app`](../todo-app)  
+> Week 2 的計畫、Supabase 設定見下方連結。
 
-**技術：** Next.js 16 + Supabase Auth + PostgreSQL + RLS
-
----
-
-## 本週交付成果
-
-- [x] Supabase 專案 + 環境變數
-- [x] Email 註冊 / 登入 / 登出
-- [x] `todos` 資料表 + RLS
-- [x] Todo CRUD 改寫 Supabase
-- [x] 錯誤處理 + 未登入 UX
-- [ ] Vercel 部署 + live demo URL（你手動部署）
+Week 2 目標：Supabase Auth + PostgreSQL + RLS，Todo 雲端同步。
 
 ---
 
-## 7 天計畫（完成狀態）
+## 快速連結
 
-| Day | 主題 | 狀態 |
-|-----|------|------|
-| 1 | Supabase 設定 | ✅ |
-| 2 | Auth | ✅ |
-| 3 | DB CRUD | ✅ |
-| 4 | RLS / 安全 | ✅（schema + 雙帳號可自測） |
-| 5 | UX / 錯誤處理 | ✅ |
-| 6 | Vercel 部署 | 待你做 |
-| 7 | 複盤 | ✅（見 `todo-saas/README.md`） |
+| 項目 | 位置 |
+|------|------|
+| 專案程式碼 | [`todo-app/`](../todo-app) |
+| Week 2 完整計畫 | [`todo-app/docs/week-02-plan.md`](../todo-app/docs/week-02-plan.md) |
+| Supabase 設定 | [`todo-app/docs/SETUP-SUPABASE.md`](../todo-app/docs/SETUP-SUPABASE.md) |
+| Cursor Prompt | [`todo-app/docs/PROMPTS-week02.md`](../todo-app/docs/PROMPTS-week02.md) |
+| Week 1 回顧 | [`week-01/README.md`](../week-01/README.md) |
 
 ---
 
-## 專案位置
-
-```
-week-02/
-├── README.md
-├── SETUP-SUPABASE.md
-├── PROMPTS.md
-└── todo-saas/
-```
+本地執行：
 
 ```bash
-cd week-02/todo-saas
+cd todo-app
+copy .env.example .env.local
 npm.cmd run dev
 ```
-
----
-
-## 部署（Day 6）
-
-1. `git add week-02/ && git commit && git push`
-2. Vercel → Root Directory：`week-02/todo-saas`
-3. 加 Supabase 環境變數
-4. Supabase Auth URL 設定加入 Vercel domain
-
----
-
-## Week 01 vs Week 02
-
-| 面向 | Week 01 | Week 02 |
-|------|---------|---------|
-| 儲存 | localStorage | PostgreSQL |
-| 登入 | 無 | Supabase Auth |
-| 跨裝置 | ❌ | ✅ |
-| 資料隔離 | 無 | RLS |
