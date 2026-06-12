@@ -10,7 +10,7 @@
 
 | 專案 | Demo | 技術棧 | AI 工具 |
 |------|------|--------|---------|
-| Week 01 Todo App | [Live Demo](https://week01-todo-app.vercel.app) *(部署後更新)* | Next.js 16, TypeScript, Tailwind | Cursor |
+| Week 01 Todo App | [Live Demo](https://ai-engineer-preparation.vercel.app) | Next.js 16, TypeScript, Tailwind | Cursor |
 | Dot to Dot 校園平台 | [GitHub 原始碼](./DOT%20to%20DOT/大四專題報告/) · [本地 Demo 指南](./DOT%20to%20DOT/大四專題報告/DEMO_GUIDE.md) | React, Node.js, SQLite, Socket.io | 傳統開發 + Cursor 輔助重構 |
 | F1 LINE Bot | [GitHub 原始碼](./linebot專案/f1_bot/) | Python, Dialogflow, LINE API | Cursor |
 

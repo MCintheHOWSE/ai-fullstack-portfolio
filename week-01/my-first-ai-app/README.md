@@ -2,8 +2,7 @@
 
 第一個 AI 輔助開發練習專案：用 **Next.js + TypeScript + Tailwind** 做的 Todo List，資料存在 **localStorage**。
 
-> Live Demo：（部署後填入 Vercel URL）  
-> 例如：`https://your-app.vercel.app`
+> Live Demo：[https://ai-engineer-preparation.vercel.app](https://ai-engineer-preparation.vercel.app)
 
 ---
 
