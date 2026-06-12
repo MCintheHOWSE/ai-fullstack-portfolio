@@ -1,0 +1,22 @@
+# Dependencies & build artifacts
+node_modules/
+.next/
+out/
+build/
+__pycache__/
+*.pyc
+
+# Environment & secrets
+.env
+.env.*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Personal / temp
+我的大學學生證.jpg
+大四專題/_slide_extract.txt
+
+# Large media (GitHub 建議單檔 < 50MB；影片可改放雲端連結)
+*.mp4
