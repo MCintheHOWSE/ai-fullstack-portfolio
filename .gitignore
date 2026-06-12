@@ -1,16 +1,16 @@
-# Dependencies
+# Dependencies & build artifacts
 node_modules/
+.next/
+out/
+build/
+dist/
+__pycache__/
+*.pyc
 
 # Environment & secrets
 .env
 .env.*
 !.env.example
-
-# Build output
-dist/
-.next/
-out/
-build/
 
 # Database (local dev only)
 *.db
@@ -18,16 +18,22 @@ build/
 # OS & editor
 .DS_Store
 Thumbs.db
+*-MCFU.*
 .vscode/
 .idea/
 
 # Vercel
 .vercel/
 
-# Personal files
+# Personal / temp
 我的大學學生證.jpg
+Untitled*.txt
 *.pem
 
 # Logs
 *.log
 npm-debug.log*
+
+# Large media (GitHub 建議單檔 < 50MB；影片改放雲端)
+*.mp4
+*.mkv
