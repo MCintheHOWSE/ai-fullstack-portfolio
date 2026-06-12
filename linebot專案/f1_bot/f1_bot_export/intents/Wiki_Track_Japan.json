@@ -1,0 +1,69 @@
+{
+  "id": "0b051acf-0fca-494c-9aad-127d2b33114d",
+  "name": "Wiki_Track_Japan",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "日本 (Suzuka)\n特點：車手最愛。S型彎道是檢驗空力效率的最高殿堂。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "afdb840b-04b6-4039-8dc0-b3cdb9bee855",
+      "data": [
+        {
+          "text": "japan",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "00a1eaa3-f8b9-4bf1-ba88-6850d69c05be",
+      "data": [
+        {
+          "text": "介紹 japan",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "87490ca8-dcc4-45e4-ab74-d5cf3dd313c7",
+      "data": [
+        {
+          "text": "japan 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

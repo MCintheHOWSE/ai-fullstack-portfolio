@@ -1,0 +1,69 @@
+{
+  "id": "33acb957-49ee-40a4-9976-ffd49034af15",
+  "name": "Wiki_Team_Mercedes",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Mercedes-AMG PETRONAS F1 (W16)\n------------------\n2025 車手：George Russell, Kimi Antonelli\n動力：Mercedes-AMG\n賽季結算：\n新人 Antonelli 展現驚人天賦，與 Russell 組成了極具潛力的陣容。W16 終於解決了彈跳問題。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "57f59bcd-1776-47d0-9946-b8d4c1c6b08d",
+      "data": [
+        {
+          "text": "mercedes",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "82370b18-5943-4811-ab2d-646a64816434",
+      "data": [
+        {
+          "text": "介紹 mercedes",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "1f1e09f8-1a6e-4c3c-904b-a71b4087acfb",
+      "data": [
+        {
+          "text": "mercedes 車隊",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

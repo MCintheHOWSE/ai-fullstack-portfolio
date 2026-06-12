@@ -1,0 +1,56 @@
+{
+  "id": "03870b45-9f22-4e6a-a2b8-ac96be3478f6",
+  "name": "Menu_TeamStandings",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "[2025 車隊年度積分榜]\n------------------\n1. McLaren - 560 pts (冠軍)\n2. Red Bull - 600 pts (失格/內鬥)\n3. Ferrari - 540 pts\n4. Mercedes - 295 pts\n5. Aston Martin - 200 pts\n6. Williams - 150 pts\n7. RB (VCARB) - 85 pts\n8. Haas - 40 pts\n9. Alpine - 20 pts\n10. Sauber - 10 pts"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "b30288d3-aae6-4be8-a9cf-8a1817acbc15",
+      "data": [
+        {
+          "text": "車隊積分",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "7a9a8aaa-10f7-47fc-96a1-5122bbc9d70b",
+      "data": [
+        {
+          "text": "車隊榜",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

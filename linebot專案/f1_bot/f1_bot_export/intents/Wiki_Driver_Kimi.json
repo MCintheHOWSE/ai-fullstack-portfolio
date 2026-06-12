@@ -1,0 +1,82 @@
+{
+  "id": "8f276d52-5edb-4291-a869-aabb3adf0280",
+  "name": "Wiki_Driver_Kimi",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Kimi Antonelli (Mercedes) #12\n[年度最佳新秀]\n年度排名：P9\n評價：義大利神童。從 F2 直升賓士，雖有新人的生澀，但速度天賦令人驚豔。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "781c1818-050b-411d-a950-83fffdafb0f6",
+      "data": [
+        {
+          "text": "kimi",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "4bd080f4-4442-46d9-a939-89eee684ab05",
+      "data": [
+        {
+          "text": "介紹 kimi",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "78fbbe31-52b1-43b5-99e5-0cc9b1887e2e",
+      "data": [
+        {
+          "text": "kimi 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "0262276b-0256-4408-8338-8188b4e335c7",
+      "data": [
+        {
+          "text": "車手 kimi",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

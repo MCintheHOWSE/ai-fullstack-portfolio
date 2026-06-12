@@ -1,0 +1,82 @@
+{
+  "id": "66b12914-87fe-453e-a6fa-276ab3a90464",
+  "name": "Wiki_Driver_Esteban",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Esteban Ocon (Haas) #31\n年度排名：P15\n評價：換個環境重新出發。在 Haas 展現了不錯的排位賽速度。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "21f05876-4a66-41f6-9933-c1ae129255e6",
+      "data": [
+        {
+          "text": "esteban",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "8a982432-798d-4e5d-96b4-7c8841046f46",
+      "data": [
+        {
+          "text": "介紹 esteban",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "b3bf17b0-51c2-42fc-8968-74134b89124f",
+      "data": [
+        {
+          "text": "esteban 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "b43d3b8f-f457-438e-a8d5-950f1281718c",
+      "data": [
+        {
+          "text": "車手 esteban",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

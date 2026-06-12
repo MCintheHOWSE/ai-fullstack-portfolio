@@ -1,0 +1,74 @@
+[
+  {
+    "id": "43be894d-9be0-4e08-84b7-ba38e2980be5",
+    "data": [
+      {
+        "text": "紅牛",
+        "alias": "team_name",
+        "meta": "@team_name",
+        "userDefined": true
+      },
+      {
+        "text": "車隊介紹",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  },
+  {
+    "id": "56004c1e-2ad9-478e-b737-b28c533ec50c",
+    "data": [
+      {
+        "text": "法拉利",
+        "alias": "team_name",
+        "meta": "@team_name",
+        "userDefined": true
+      },
+      {
+        "text": "今年怎麼樣",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  },
+  {
+    "id": "c3d33b39-4f33-43ce-9530-2a3bc24823f5",
+    "data": [
+      {
+        "text": "麥拉倫",
+        "alias": "team_name",
+        "meta": "@team_name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  },
+  {
+    "id": "7b4fec63-4ac0-4c69-8da8-814cbc0506fa",
+    "data": [
+      {
+        "text": "介紹一下",
+        "userDefined": false
+      },
+      {
+        "text": "賓士",
+        "alias": "team_name",
+        "meta": "@team_name",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  }
+]

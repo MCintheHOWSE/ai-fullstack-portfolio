@@ -1,0 +1,82 @@
+{
+  "id": "8dec58f1-f923-4ef9-8821-a41647a9903a",
+  "name": "Wiki_Driver_George",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "George Russell (Mercedes) #63\n年度排名：P7\n評價：賓士新領袖。在後 Hamilton 時代成功扛起車隊，但在輪胎管理上仍有進步空間。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "bd5342f2-2a12-45c1-9ab5-99b7ffde3cb0",
+      "data": [
+        {
+          "text": "george",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "4937dd79-db7a-4395-95c9-c15e85ea855a",
+      "data": [
+        {
+          "text": "介紹 george",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "37c85017-c414-418a-abf3-1f54f912c2cf",
+      "data": [
+        {
+          "text": "george 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "373bf6a4-127d-49a9-9af9-b172827c0f44",
+      "data": [
+        {
+          "text": "車手 george",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

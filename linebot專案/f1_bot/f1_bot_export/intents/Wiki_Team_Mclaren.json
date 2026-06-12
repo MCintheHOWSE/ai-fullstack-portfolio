@@ -1,0 +1,69 @@
+{
+  "id": "82972bd3-543b-4605-9374-0dc98e7d345d",
+  "name": "Wiki_Team_Mclaren",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "McLaren F1 Team (MCL39)\n------------------\n2025 車手：Lando Norris, Oscar Piastri\n動力：Mercedes-AMG\n賽季結算：\n年度車隊總冠軍！MCL39 是全場最均衡的賽車，Lando 與 Oscar 的穩定輸出是奪冠關鍵。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "db989121-3432-4f04-9269-735cc440b95b",
+      "data": [
+        {
+          "text": "mclaren",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "149570d2-bdcf-4027-acee-baac3b7c9b59",
+      "data": [
+        {
+          "text": "介紹 mclaren",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "646a1b89-449e-4bb5-b458-52cae16af465",
+      "data": [
+        {
+          "text": "mclaren 車隊",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

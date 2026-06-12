@@ -1,0 +1,69 @@
+{
+  "id": "a709da36-9ce1-4a86-8b8b-8c25636bc006",
+  "name": "Wiki_Track_Abudhabi",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "阿布達比 (Yas Marina)\n特點：賽季收官戰。黃昏中迎接新的世界冠軍。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "ddf0e3d8-f185-4647-9652-de16c439818d",
+      "data": [
+        {
+          "text": "abudhabi",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "b7450a10-f73f-4c39-84ed-1411ad3e3117",
+      "data": [
+        {
+          "text": "介紹 abudhabi",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "b8b4322c-9c36-4d44-9152-59bfbcdb250c",
+      "data": [
+        {
+          "text": "abudhabi 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

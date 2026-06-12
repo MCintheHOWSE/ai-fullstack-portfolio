@@ -1,0 +1,69 @@
+{
+  "id": "7fb6966e-7bd7-4a84-9cbe-74e7e48a2334",
+  "name": "Wiki_Track_Austin",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "美國 (COTA)\n特點：集合了世界各大賽道的精華彎角。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "41bcbe87-b8be-4942-8ab5-43cb6a2f21cf",
+      "data": [
+        {
+          "text": "austin",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "06a44c82-ab20-4890-8499-b01272798319",
+      "data": [
+        {
+          "text": "介紹 austin",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "a5d5201a-90d6-4e90-b1ee-d86f2488b4b1",
+      "data": [
+        {
+          "text": "austin 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

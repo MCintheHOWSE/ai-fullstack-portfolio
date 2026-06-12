@@ -1,0 +1,82 @@
+{
+  "id": "0190e09a-7f6c-4a7f-bf10-115db109ff17",
+  "name": "Wiki_Driver_Yuki",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Yuki Tsunoda (Red Bull) #22 [已離隊]\n[狀態：季後慘遭解約]\n2025 戰績：年度 P4 / 日本站冠軍\n評價：最悲情的賽季。雖在鈴鹿奪冠證明實力，卻仍被紅牛體系拋棄。目前傳聞 Honda 正全力運作他轉投 Aston Martin。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "3ade5b0c-b0c8-47fd-b663-3e9317718f30",
+      "data": [
+        {
+          "text": "yuki",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "9df5575c-0c6a-43f3-b228-ed38e2edaf63",
+      "data": [
+        {
+          "text": "介紹 yuki",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "01219340-cc1d-4f7a-a431-21326f87b4c5",
+      "data": [
+        {
+          "text": "yuki 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "19e30b0a-15b5-40b6-afea-1ec3373b46ae",
+      "data": [
+        {
+          "text": "車手 yuki",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

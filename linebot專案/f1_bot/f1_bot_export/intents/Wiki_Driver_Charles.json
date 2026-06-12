@@ -1,0 +1,82 @@
+{
+  "id": "f95c546d-d5c4-41fb-88a7-ba10f451bfd6",
+  "name": "Wiki_Driver_Charles",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Charles Leclerc (Ferrari) #16\n年度排名：P4\n評價：單圈依然無敵。與 Hamilton 的合作比預期中和諧，兩人合力將 Ferrari 帶回了車隊榜前列。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "62c37607-ff65-4049-8bcb-4b80c052502b",
+      "data": [
+        {
+          "text": "charles",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "da74beb0-85b5-4881-bd43-8bf11bddf2fa",
+      "data": [
+        {
+          "text": "介紹 charles",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "3f46684c-72a7-4982-87d0-a1695baa1380",
+      "data": [
+        {
+          "text": "charles 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "34e24d2f-ab3f-40f6-bdf3-117e85067e6d",
+      "data": [
+        {
+          "text": "車手 charles",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

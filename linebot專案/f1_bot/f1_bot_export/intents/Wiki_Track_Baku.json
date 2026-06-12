@@ -1,0 +1,69 @@
+{
+  "id": "f29f0e4a-b3c2-4729-908a-8f047de9a26d",
+  "name": "Wiki_Track_Baku",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "亞塞拜然 (Baku)\n特點：最長直道與最窄古堡彎的極端結合。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "6bc7d9d6-3b37-4f94-8624-2a9da3044261",
+      "data": [
+        {
+          "text": "baku",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "516c6192-1bcd-4ca7-a248-a54b1238d323",
+      "data": [
+        {
+          "text": "介紹 baku",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "ea279a29-550b-4c95-bd4a-bcd3263cc456",
+      "data": [
+        {
+          "text": "baku 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

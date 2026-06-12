@@ -1,0 +1,69 @@
+{
+  "id": "a04d7be2-f0ca-42ea-9199-58eebe6f31a1",
+  "name": "Wiki_Team_Redbull",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Oracle Red Bull Racing (RB21)\n------------------\n2025 車手：Max Verstappen, Yuki Tsunoda (季後解約)\n總部：Milton Keynes, UK\n動力：Honda RBPTH003 (最後一年)\n賽季結算：\nYuki 雖在鈴鹿奪冠，但因內部鬥爭季後被開除。Max 憑藉個人能力奪下車手冠軍，但車隊冠軍被麥拉倫奪走。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "c5e92d7f-b9f3-49ff-869c-b102dcdb7785",
+      "data": [
+        {
+          "text": "redbull",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "0184050c-4f84-4b9a-8f0b-262d93ce6dab",
+      "data": [
+        {
+          "text": "介紹 redbull",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "bf475dcf-f052-42a8-ba5d-9113933b289c",
+      "data": [
+        {
+          "text": "redbull 車隊",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

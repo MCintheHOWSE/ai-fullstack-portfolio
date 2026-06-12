@@ -1,0 +1,69 @@
+{
+  "id": "b0aa7aef-5e1a-4ed7-b33c-e0701150657d",
+  "name": "Wiki_Track_Qatar",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "卡達 (Lusail)\n特點：全場高速流動，對車手頸部肌肉是考驗。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "1b7ecfb6-73e3-484b-8cbc-ec36d4cf2187",
+      "data": [
+        {
+          "text": "qatar",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "c79b294d-18ce-48b7-a2a6-71e0b3445574",
+      "data": [
+        {
+          "text": "介紹 qatar",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "f0e32e6e-acc2-463e-b63a-7b9720df40f2",
+      "data": [
+        {
+          "text": "qatar 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

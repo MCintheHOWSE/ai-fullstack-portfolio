@@ -1,0 +1,82 @@
+{
+  "id": "0ea5c9d7-26e5-4fba-882b-484e9930786f",
+  "name": "Wiki_Driver_Lando",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Lando Norris (McLaren) #4\n年度排名：P2 (年度亞軍)\n評價：最強挑戰者。雖然輸給了 Max，但帶領麥拉倫拿下了睽違已久的車隊冠軍。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "d5ab38f0-70f7-41c1-a299-276787dd2187",
+      "data": [
+        {
+          "text": "lando",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "5da194c3-d4fd-4fb1-8b1e-5215f358b177",
+      "data": [
+        {
+          "text": "介紹 lando",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "5c513c9e-a356-4389-8895-57bc4664fd50",
+      "data": [
+        {
+          "text": "lando 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "ac6990fe-3f68-4a70-b97e-612b364a1490",
+      "data": [
+        {
+          "text": "車手 lando",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

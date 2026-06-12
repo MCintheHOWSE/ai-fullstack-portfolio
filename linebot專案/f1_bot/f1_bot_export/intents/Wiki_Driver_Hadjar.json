@@ -1,0 +1,82 @@
+{
+  "id": "61729898-0025-43ce-ab11-9bf8d449a7fe",
+  "name": "Wiki_Driver_Hadjar",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "Isack Hadjar (RB) #37\n年度排名：P14\n評價：從 F2 亞軍晉升的新人。速度不錯但穩定性欠佳，常有轉向過度的失誤。(註：修正車號衝突，暫定#37)"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "b51ea98c-c6c8-4017-8347-decf225a88f6",
+      "data": [
+        {
+          "text": "hadjar",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "05ba01a1-2006-4418-b66e-5c100851b8b5",
+      "data": [
+        {
+          "text": "介紹 hadjar",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "0711aee6-989c-486c-a7f1-bc2deabb37fc",
+      "data": [
+        {
+          "text": "hadjar 是誰",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "92dcd039-2781-4941-ad40-b19ce1695424",
+      "data": [
+        {
+          "text": "車手 hadjar",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

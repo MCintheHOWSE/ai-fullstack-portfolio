@@ -1,0 +1,102 @@
+{
+  "id": "ea195429-8325-4b0c-8c97-9fbea9f35ce0",
+  "name": "Menu_DriverWiki",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "[F1 車手百科索引]\n你想了解哪位車手？請直接輸入名字，例如：\n\n- 介紹 Max (世界冠軍)\n- 介紹 Yuki (話題人物)\n- 介紹 Lewis (紅袍車神)\n- 介紹 Lando (最強挑戰者)"
+        },
+        {
+          "type": 4,
+          "lang": "zh-tw",
+          "payload": {
+            "line": {
+              "type": "text",
+              "text": "[F1 車手百科索引]\n你想了解哪位車手？請直接輸入名字，例如：\n\n- 介紹 Max (世界冠軍)\n- 介紹 Yuki (話題人物)\n- 介紹 Lewis (紅袍車神)\n- 介紹 Lando (最強挑戰者)",
+              "quickReply": {
+                "items": [
+                  {
+                    "type": "action",
+                    "action": {
+                      "type": "message",
+                      "label": "Max",
+                      "text": "介紹 Max"
+                    }
+                  },
+                  {
+                    "type": "action",
+                    "action": {
+                      "type": "message",
+                      "label": "Lewis",
+                      "text": "介紹 Lewis"
+                    }
+                  },
+                  {
+                    "type": "action",
+                    "action": {
+                      "type": "message",
+                      "label": "Lando",
+                      "text": "介紹 Lando"
+                    }
+                  },
+                  {
+                    "type": "action",
+                    "action": {
+                      "type": "message",
+                      "label": "Yuki",
+                      "text": "介紹 Yuki"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "93ed8be3-6722-4845-822f-fbcc10ce5596",
+      "data": [
+        {
+          "text": "車手百科",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "6a011e32-398d-4612-9e2f-b61ff916392a",
+      "data": [
+        {
+          "text": "車手介紹",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

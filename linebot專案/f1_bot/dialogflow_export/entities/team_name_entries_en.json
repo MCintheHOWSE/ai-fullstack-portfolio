@@ -1,0 +1,84 @@
+[
+  {
+    "value": "redbull",
+    "synonyms": [
+      "Red Bull",
+      "RB",
+      "紅牛",
+      "奧地利車隊"
+    ]
+  },
+  {
+    "value": "ferrari",
+    "synonyms": [
+      "Ferrari",
+      "SF",
+      "法拉利",
+      "紅軍"
+    ]
+  },
+  {
+    "value": "mclaren",
+    "synonyms": [
+      "McLaren",
+      "MCL",
+      "麥拉倫"
+    ]
+  },
+  {
+    "value": "mercedes",
+    "synonyms": [
+      "Mercedes",
+      "賓士",
+      "梅賽德斯"
+    ]
+  },
+  {
+    "value": "astonmartin",
+    "synonyms": [
+      "Aston Martin",
+      "AMR",
+      "奧斯頓馬丁"
+    ]
+  },
+  {
+    "value": "alpine",
+    "synonyms": [
+      "Alpine",
+      "阿爾派",
+      "雷諾"
+    ]
+  },
+  {
+    "value": "williams",
+    "synonyms": [
+      "Williams",
+      "威廉斯"
+    ]
+  },
+  {
+    "value": "rb",
+    "synonyms": [
+      "VCARB",
+      "Racing Bulls",
+      "小牛",
+      "RB隊"
+    ]
+  },
+  {
+    "value": "sauber",
+    "synonyms": [
+      "Sauber",
+      "Audi",
+      "索伯",
+      "奧迪"
+    ]
+  },
+  {
+    "value": "haas",
+    "synonyms": [
+      "Haas",
+      "哈斯"
+    ]
+  }
+]

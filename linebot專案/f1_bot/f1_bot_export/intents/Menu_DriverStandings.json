@@ -1,0 +1,56 @@
+{
+  "id": "1cfa3190-daa7-4401-84d0-0650ee9bc54a",
+  "name": "Menu_DriverStandings",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "[2025 車手年度積分榜 (Top 10)]\n------------------\n1. Max Verstappen - 420 pts (Red Bull)\n2. Lando Norris - 350 pts (McLaren)\n3. Lewis Hamilton - 280 pts (Ferrari)\n4. Charles Leclerc - 260 pts (Ferrari)\n5. Oscar Piastri - 210 pts (McLaren)\n6. Yuki Tsunoda - 180 pts (Red Bull)\n7. George Russell - 175 pts (Mercedes)\n8. Fernando Alonso - 150 pts (Aston Martin)\n9. Kimi Antonelli - 120 pts (Mercedes)\n10. Carlos Sainz - 110 pts (Williams)"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "70658759-c27c-49b4-8324-bee6c878051a",
+      "data": [
+        {
+          "text": "車手積分",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "e19a0340-a535-4417-82f5-7af8aee4420f",
+      "data": [
+        {
+          "text": "車手榜",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

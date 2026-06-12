@@ -1,0 +1,54 @@
+[
+  {
+    "id": "d7c4851e-b80c-4746-b4f9-92fdec578c42",
+    "data": [
+      {
+        "text": "車隊積分",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  },
+  {
+    "id": "0a8c123d-1b64-4537-970d-ff29acc51d8a",
+    "data": [
+      {
+        "text": "車隊排名",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  },
+  {
+    "id": "bd535fed-3803-49f1-b452-e0cb1dad27fa",
+    "data": [
+      {
+        "text": "最強車隊",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  },
+  {
+    "id": "2417b1c9-de23-4795-807d-23be7cd587a1",
+    "data": [
+      {
+        "text": "Team Standings",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "lang": "zh-tw",
+    "updated": 0
+  }
+]

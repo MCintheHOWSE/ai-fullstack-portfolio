@@ -1,0 +1,69 @@
+{
+  "id": "c9fcd8ef-885b-4128-bc90-a678cd878936",
+  "name": "Wiki_Track_Imola",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "伊莫拉 (Imola)\n特點：法拉利主場之一。傳統賽道，路幅狹窄，幾乎沒容錯空間。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "f961acd6-faa8-4b17-89d9-00a7b9da2816",
+      "data": [
+        {
+          "text": "imola",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "85e73d3e-6c1d-4069-b339-bd82607bd32f",
+      "data": [
+        {
+          "text": "介紹 imola",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "69a6523e-c2a0-4f44-b24e-dff2001e6134",
+      "data": [
+        {
+          "text": "imola 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}

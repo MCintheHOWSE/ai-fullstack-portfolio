@@ -1,0 +1,69 @@
+{
+  "id": "58d8844e-930b-4592-9bdb-f204b4c949a2",
+  "name": "Wiki_Track_Miami",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "zh-tw",
+          "speech": "邁阿密 (Miami)\n特點：美式秀場。賽道表面抓地力低，天氣炎熱。"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "userSays": [
+    {
+      "id": "40ee86fd-e01e-4219-8ecf-cc3dd2230492",
+      "data": [
+        {
+          "text": "miami",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "4955866f-b2ad-4b17-b258-197bc621f441",
+      "data": [
+        {
+          "text": "介紹 miami",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    },
+    {
+      "id": "41a3b75b-bddd-46cc-83c1-288b2868820c",
+      "data": [
+        {
+          "text": "miami 賽道",
+          "userDefined": false
+        }
+      ],
+      "isTemplate": false,
+      "count": 0,
+      "lang": "zh-tw",
+      "updated": 0
+    }
+  ]
+}
