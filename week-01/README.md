@@ -10,7 +10,7 @@
 
 - [x] Next.js 專案 scaffold（`my-first-ai-app/`）
 - [x] 可運作的 Todo App（新增、刪除、完成切換、localStorage）
-- [ ] GitHub repo + 至少 3 次有意義的 commit
+- [x] GitHub repo + 至少 3 次有意義的 commit（進行中：第 2 次 commit）
 - [ ] Vercel 部署 + live demo URL
 - [ ] 能清楚說明：哪些 code 是 AI 寫的、你改了什麼
 
