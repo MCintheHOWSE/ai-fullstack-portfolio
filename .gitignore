@@ -37,3 +37,11 @@ npm-debug.log*
 # Large media (GitHub 建議單檔 < 50MB；影片改放雲端)
 *.mp4
 *.mkv
+
+# Coursework — exclude large ML artifacts
+coursework/**/*.pt
+coursework/**/*.pth
+coursework/**/*.h5
+coursework/**/*.xlsx
+coursework/**/yolov9/
+coursework/**/.ipynb_checkpoints/

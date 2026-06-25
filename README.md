@@ -2,7 +2,7 @@
 
 > Projects built with **AI-first workflow** (Cursor, Claude, GitHub Copilot) + human review & fixes.
 
-**GitHub:** [MCintheHOWSE/ai-engineer-preparation](https://github.com/MCintheHOWSE/ai-engineer-preparation)
+**GitHub:** [MCintheHOWSE/ai-fullstack-portfolio](https://github.com/MCintheHOWSE/ai-fullstack-portfolio)
 
 ---
 
@@ -10,7 +10,7 @@
 
 | 專案 | Demo | 技術棧 | AI 工具 |
 |------|------|--------|---------|
-| Todo App | [Live Demo](https://ai-engineer-preparation.vercel.app) | Next.js 16, Supabase, PostgreSQL, RLS | Cursor |
+| Todo App | [Live Demo](https://ai-fullstack-portfolio.vercel.app) | Next.js 16, Supabase, PostgreSQL, RLS | Cursor |
 | Dot to Dot 校園平台 | [Live Demo](https://dot-to-dot-1mn5.onrender.com) · [原始碼](./dot-to-dot/) | React, Node.js, SQLite, Socket.io | 傳統開發 + Cursor 輔助重構 |
 | F1 LINE Bot | [GitHub 原始碼](./linebot專案/f1_bot/) | Python, Dialogflow, LINE API | Cursor |
 
@@ -56,6 +56,12 @@ npm run dev                   # 終端 2 → http://localhost:5173
 F1 賽事資訊 LINE Bot，整合 Dialogflow NLU。
 
 📁 [`linebot專案/f1_bot`](./linebot專案/f1_bot)
+
+### 4. Coursework — 大學作業精選
+
+大三～大四課程作業（MBTI NLP、時間序列、ML、CV、資料工程等）。
+
+📁 [`coursework`](./coursework)
 
 ---
 
