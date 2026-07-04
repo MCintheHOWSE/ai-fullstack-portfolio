@@ -30,6 +30,9 @@ Thumbs.db
 Untitled*.txt
 *.pem
 
+# Local-only career docs (不上傳 GitHub)
+private/
+
 # Logs
 *.log
 npm-debug.log*
