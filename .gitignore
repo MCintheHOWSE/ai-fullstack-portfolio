@@ -32,6 +32,23 @@ Untitled*.txt
 
 # Local-only career docs (不上傳 GitHub)
 private/
+ETL ENGINEER/portfolio/interview-stories.local.md
+ETL ENGINEER/01-company-and-role.md
+ETL ENGINEER/02-self-introduction.md
+ETL ENGINEER/03-jd-skill-gap.md
+ETL ENGINEER/04-interview-qa.md
+ETL ENGINEER/05-dwh-and-sql.md
+ETL ENGINEER/06-tool-bridge.md
+ETL ENGINEER/07-pentaho-7day-plan.md
+ETL ENGINEER/08-openmetadata-notes.md
+ETL ENGINEER/09-study-schedule.md
+ETL ENGINEER/10-questions-to-ask.md
+ETL ENGINEER/11-countdown-plan-7-17.md
+ETL ENGINEER/12-sql-interview-drills.md
+ETL ENGINEER/CHEATSHEET.md
+ETL ENGINEER/README.md
+ETL ENGINEER/pentaho-course/
+ETL ENGINEER/面試資料/
 
 # Logs
 *.log
