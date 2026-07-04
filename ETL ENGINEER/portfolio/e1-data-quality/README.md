@@ -13,7 +13,7 @@ Pentaho Data Integration（PDI）實作：合併兩區客戶檔、驗證資料�
 | 合併東區 CSV + 西區 pipe 檔 | 13 筆 |
 | 品質篩選（空 ID、非法 age） | 4 筆 rejected |
 | 依 `customer_id` 去重 | 6 筆合格 |
-| MD5 `record_hash` | 每筆資料的稽核指紋 |
+| User Defined Java Expression `record_hash` | 每筆資料的稽核指紋 |
 
 ---
 
@@ -26,7 +26,7 @@ flowchart LR
   append --> filter[Filter]
   filter -->|合格| dedupe[Unique HashSet]
   filter -->|不合格| rejected[rejected 檔]
-  dedupe --> hash[MD5 hash]
+  dedupe --> hash[add_hash Java]
 ```
 
 ### 畫布（Spoon）
@@ -61,6 +61,13 @@ e1-data-quality/
 - **Filter**：`IS NOT NULL`、空字串檢查、`REGEXP` 驗證 age 為數字
 - **Unique rows (HashSet)**：不需先 Sort 即可依 key 去重
 - **Rejected 檔**：不合格資料另存，方便追溯
+- **User Defined Java Expression**：以 `DigestUtils.md5Hex` 產生 `record_hash`（非 Calculator step）
+
+```java
+org.apache.commons.codec.digest.DigestUtils.md5Hex(
+  customer_id + "|" + customer_name + "|" + segment
+)
+```
 
 ---
 

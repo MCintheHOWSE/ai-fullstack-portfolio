@@ -4,4 +4,4 @@
 
 | 專案 | 說明 |
 |------|------|
-| [e1-data-quality](./e1-data-quality/) | Pentaho PDI — 多來源客戶資料合併、品質篩選、去重、MD5 稽核 hash |
+| [e1-data-quality](./e1-data-quality/) | Pentaho PDI — 多來源客戶資料合併、品質篩選、去重、Java Expression 稽核 hash |

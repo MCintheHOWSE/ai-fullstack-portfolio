@@ -66,7 +66,7 @@ F1 賽事資訊 LINE Bot，整合 Dialogflow NLU。
 
 ### 5. Pentaho ETL — 多來源客戶資料品質閘門
 
-多來源客戶檔合併、品質篩選、去重與 MD5 稽核 hash（Pentaho PDI）。
+多來源客戶檔合併、品質篩選、去重與 Java Expression 稽核 hash（Pentaho PDI）。
 
 📁 [`ETL ENGINEER/portfolio/e1-data-quality`](./ETL%20ENGINEER/portfolio/e1-data-quality/)
 
