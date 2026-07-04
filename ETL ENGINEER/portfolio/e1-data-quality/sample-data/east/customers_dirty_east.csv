@@ -1,0 +1,8 @@
+customer_id,customer_name,segment,age,country,city,state,postal_code,region
+C001,王小明,Consumer,35,Taiwan,Taipei,Taipei,100,East
+C004,張雅婷,Consumer,31,Taiwan,Hsinchu,Hsinchu,300,East
+,林錯誤列,Consumer,28,Taiwan,Taichung,Taichung,400,East
+C005,李國強,Corporate,45,Taiwan,Tainan,Tainan,700,East
+C999,幽靈客戶,Consumer,-5,Taiwan,Taipei,Taipei,100,East
+C004,張雅婷重複,Consumer,31,Taiwan,Hsinchu,Hsinchu,300,East
+C008,趙心怡,Home Office,33,Taiwan,Taipei,Taipei,103,East

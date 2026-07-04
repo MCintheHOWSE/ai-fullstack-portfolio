@@ -13,6 +13,7 @@
 | Todo App | [Live Demo](https://ai-engineer-preparation.vercel.app) | Next.js 16, Supabase, PostgreSQL, RLS | Cursor |
 | Dot to Dot 校園平台 | [Live Demo](https://dot-to-dot-1mn5.onrender.com) · [原始碼](./dot-to-dot/) | React, Node.js, SQLite, Socket.io | 傳統開發 + Cursor 輔助重構 |
 | F1 LINE Bot | [GitHub 原始碼](./linebot專案/f1_bot/) | Python, Dialogflow, LINE API | Cursor |
+| Equipment Monitor AI | [專案 README](./equipment-monitor-ai/) | FastAPI, asyncio, statsmodels, sklearn | Cursor |
 
 ---
 
@@ -57,6 +58,18 @@ F1 賽事資訊 LINE Bot，整合 Dialogflow NLU。
 
 📁 [`linebot專案/f1_bot`](./linebot專案/f1_bot)
 
+### 4. Equipment Monitor AI — 工業感測後端（進行中）
+
+模擬智慧工廠場景：感測資料 ingest、Holt-Winters 時序預測、Isolation Forest 異常偵測，FastAPI 非同步 API + Docker。
+
+📁 [`equipment-monitor-ai`](./equipment-monitor-ai) · 詳見 [ROADMAP](./equipment-monitor-ai/ROADMAP.md)
+
+### 5. Pentaho E1 — 客戶主檔品質閘門（歐立威 ETL 練習）
+
+Pentaho PDI 企業 Lab：多來源客戶主檔 Append、Filter 品質分流、HashSet 去重、MD5 稽核 hash。read=13 / rejected=4 / written=6。
+
+📁 [`ETL ENGINEER/portfolio/e1-data-quality`](./ETL%20ENGINEER/portfolio/e1-data-quality/) · Transformation：`lab-e01_data_quality.ktr`
+
 ---
 
 ## AI Development Workflow
@@ -83,6 +96,8 @@ F1 賽事資訊 LINE Bot，整合 Dialogflow NLU。
 | Node.js / Python | Dot to Dot 後端、F1 LINE Bot |
 | 能讀懂並修正 AI code | Todo App README 的 Phase 1/2 紀錄 |
 | LINE Bot / API 整合 | F1 LINE Bot |
+| Python AI Backend / 時序預測 | Equipment Monitor AI |
+| ETL / Pentaho / 資料品質 | [Pentaho E1 品質閘門](./ETL%20ENGINEER/portfolio/e1-data-quality/) |
 | Portfolio + Demo | 本 repo + Vercel Live Demo |
 
 ---

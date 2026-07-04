@@ -1,0 +1,5 @@
+customer_id;customer_name;segment;age;country;city;state;postal_code;region
+    ;林錯誤列 ;Consumer   ;28             ;Taiwan;Taichung;Taichung;400;East
+C999;幽靈客戶 ;Consumer   ;-5             ;Taiwan;Taipei  ;Taipei  ;100;East
+    ;缺ID客戶;Consumer   ;30             ;Taiwan;Tainan  ;Tainan  ;700;West
+C010;周雅雯  ;Consumer   ;abc            ;Taiwan;Taipei  ;Taipei  ;100;West

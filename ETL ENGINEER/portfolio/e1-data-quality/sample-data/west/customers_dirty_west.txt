@@ -1,0 +1,7 @@
+customer_id|customer_name|segment|age|country|city|state|postal_code|region
+C001|王小明|Consumer|35|Taiwan|Taipei|Taipei|100|East
+C002|陳美玲|Corporate|42|Taiwan|Kaohsiung|Kaohsiung|800|West
+C003|林志豪|Home Office|28|Taiwan|Taichung|Taichung|400|East
+C002|陳美玲重複|Corporate|42|Taiwan|Kaohsiung|Kaohsiung|800|West
+|缺ID客戶|Consumer|30|Taiwan|Tainan|Tainan|700|West
+C010|周雅雯|Consumer|abc|Taiwan|Taipei|Taipei|100|West
