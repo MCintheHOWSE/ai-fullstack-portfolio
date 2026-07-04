@@ -1,0 +1,156 @@
+---
+title: "第八組期末報告：台灣航空客運量之趨勢與季節性預測"
+author: "許鈞富、杜翰威"
+date: "`r format(Sys.Date(), '%Y-%m-%d')`"
+output:
+  word_document:
+    toc: true
+    toc_depth: 2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, fig.align = "center")
+if (!file.exists("report_output/model_comparison.csv")) {
+  source("final_analysis.R")
+}
+library(readr)
+out <- "report_output"
+```
+
+## 一、研究題目
+
+**台灣每月航空客運量之時間序列預測與季節效應分析：從歷史趨勢到未來 12 個月之短期至中期需求區間預測。**
+
+航空業具備高度資本密集特性，準確的客運需求預測對航班排程、機組調度、票價策略及機場資源配置皆至關重要。本研究以交通部民用航空局公開統計為基礎，運用時間序列方法萃取趨勢與季節規律，並評估樣本外預測表現。
+
+## 二、摘要
+
+本研究蒐集交通部民用航空局《民航統計月報》真實月度資料（民國 105–115 年，2016-01 至 2026-04，共 124 筆），以 Hold-out 法保留最後 12 個月作為測試集。變數為各機場「進出旅客人次」（提要分析）。分析顯示具明顯年度季節性；Holt-Winters 乘法模型通常優於加法模型。2020–2021 年疫情為主要結構性限制。
+
+## 三、前言
+
+時間序列預測在航空客運需求管理中扮演關鍵角色。Hyndman & Athanasopoulos（2021）指出，具趨勢與季節性的序列應先辨識季節型態（加法或乘法），再選擇 Holt-Winters 或 SARIMA 等模型。Box et al.（2015）的 ARIMA 框架則提供以 ACF/PACF 與資訊準則選模的系統化流程。針對台灣航空市場，交通部民用航空局《民航統計月報》為最權威之公開資料來源，本研究即以此為實證基礎。
+
+## 四、可驗證假說
+
+1. **顯著季節效應假說**：台灣航空客運量具固定年度季節性；暑假（7–8 月）及春節期間季節指數 > 1，11 月呈淡季。
+2. **波動幅度放大假說**：隨客運量成長，絕對波動幅度等比例放大，**乘法模型**優於加法模型。
+
+## 五、資料來源
+
+| 項目 | 說明 |
+|------|------|
+| 來源 | [交通部民用航空局《民航統計月報》](https://www.caa.gov.tw/StatisticsYearMonthFile.aspx?a=1091&lang=1) |
+| 期間 | 民國 105–115 年（約 2016–2026，依官網已發布月份） |
+| 目標變數 | 每月全國機場進出旅客人次（提要分析／表3） |
+| 切割方式 | 訓練集：除最後 12 個月外；測試集：最後 12 個月 |
+
+```{r load-data}
+raw <- read_csv("taiwan_air_passengers.csv", show_col_types = FALSE)
+head(raw, 3)
+```
+
+## 六、分析方法
+
+1. **前處理**：缺失值檢查、ADF 平穩性檢定、訓練/測試切割  
+2. **探索性分析**：時序圖、季節分解、ACF/PACF  
+3. **模型配適**：Holt-Winters（加法/乘法）、SARIMA（`auto.arima`）  
+4. **模型評估**：RMSE、MAE、MAPE（測試集）  
+5. **殘差診斷**：Ljung-Box 檢定、殘差圖  
+
+## 七、流程圖
+
+```
+問題定義 → 資料蒐集 → 訓練/測試切割 → ADF 檢定
+    → 季節分解 → HW / SARIMA 配適 → 殘差診斷 → 誤差比較 → 結論
+```
+
+## 八、分析結果
+
+### 8.1 前處理與平穩性（ADF）
+
+```{r adf}
+read_csv(file.path(out, "adf_results.csv"), show_col_types = FALSE)
+```
+
+原始訓練集 ADF 檢定 p 值 > 0.05，拒絕「序列已平穩」；一階差分後 p 值 < 0.05，可視為平穩序列，後續以 SARIMA 建模合理。
+
+### 8.2 探索性分析
+
+```{r fig-ts, fig.cap="台灣每月航空客運量時序圖（紅線為訓練/測試分界）"}
+knitr::include_graphics(file.path(out, "01_timeseries.png"))
+```
+
+2015–2024 年 COVID-19 衝擊後，2025–2026 年客運量已逐步復甦；測試集為最後 12 個月（2025-05–2026-04）。
+
+### 8.3 季節性分析
+
+```{r fig-decomp, fig.cap="乘法季節分解"}
+knitr::include_graphics(file.path(out, "02_decomposition_multiplicative.png"))
+```
+
+```{r season-index}
+season <- read_csv(file.path(out, "seasonal_index.csv"), show_col_types = FALSE)
+season
+```
+
+```{r fig-season, fig.cap="月別季節指數"}
+knitr::include_graphics(file.path(out, "03_seasonal_index.png"))
+```
+
+7 月（`r round(season$index[7], 3)`）與 8 月（`r round(season$index[8], 3)`）季節指數最高；11 月（`r round(season$index[11], 3)`）最低，**支持假說一**。
+
+### 8.4 ACF / PACF
+
+```{r fig-acf, fig.cap="訓練集 ACF 與 PACF"}
+knitr::include_graphics(file.path(out, "04_acf_pacf.png"))
+```
+
+ACF 在 lag 12、24 等處顯著，確認年度季節週期（s = 12）。
+
+### 8.5 模型配適與預測
+
+**Holt-Winters 乘法模型（樣本外預測）**
+
+```{r fig-hw, fig.cap="Holt-Winters 乘法模型"}
+knitr::include_graphics(file.path(out, "05_hw_multiplicative_forecast.png"))
+```
+
+**SARIMA 模型**
+
+```{r fig-sarima, fig.cap="SARIMA 樣本外預測"}
+knitr::include_graphics(file.path(out, "06_sarima_forecast.png"))
+```
+
+### 8.6 模型評估（測試集：最後 12 個月）
+
+```{r metrics}
+read_csv(file.path(out, "model_comparison.csv"), show_col_types = FALSE)
+```
+
+乘法 Holt-Winters 的 MAPE（`r round(read_csv(file.path(out, "model_comparison.csv"), show_col_types = FALSE)$MAPE[2], 2)`%）低於加法模型（`r round(read_csv(file.path(out, "model_comparison.csv"), show_col_types = FALSE)$MAPE[1], 2)`%），**支持假說二**。SARIMA 測試集 MAPE 最低（`r round(read_csv(file.path(out, "model_comparison.csv"), show_col_types = FALSE)$MAPE[3], 2)`%），整體優於 Holt-Winters。
+
+### 8.7 殘差診斷
+
+```{r ljung}
+read_csv(file.path(out, "ljung_box_results.csv"), show_col_types = FALSE)
+```
+
+```{r fig-resid, fig.cap="SARIMA 殘差診斷"}
+knitr::include_graphics(file.path(out, "07_residual_diagnostics.png"))
+```
+
+Ljung-Box 檢定 p 值 > 0.05 時，殘差可視為白噪音，模型已充分萃取序列資訊。
+
+## 九、討論與總結
+
+1. 台灣航空客運量具**顯著季節性**，7–8 月與春節為旺季、11 月為淡季，符合旅遊與返鄉行為。
+2. 客運量隨時間成長，季節波動幅度亦放大，**乘法 Holt-Winters 模型**優於加法模型。
+3. 在樣本外測試集上，**SARIMA** MAPE 最低，**Holt-Winters 乘法**次之，均優於加法模型。
+4. **限制**：訓練集含 2020–2021 疫情衝擊，可能影響模型對復甦後序列的估計；2026 年僅有 1–4 月資料。
+
+## 十、參考文獻
+
+1. Box, G. E. P., Jenkins, G. M., Reinsel, G. C., & Ljung, G. M. (2015). *Time Series Analysis: Forecasting and Control* (5th ed.). Wiley.
+2. Hyndman, R. J., & Athanasopoulos, G. (2021). *Forecasting: Principles and Practice* (3rd ed.). OTexts. https://otexts.com/fpp3/
+3. 交通部民用航空局. *民航統計月報*. https://www.caa.gov.tw/
