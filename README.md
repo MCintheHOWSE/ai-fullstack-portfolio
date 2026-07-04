@@ -64,9 +64,9 @@ F1 賽事資訊 LINE Bot，整合 Dialogflow NLU。
 
 📁 [`equipment-monitor-ai`](./equipment-monitor-ai) · 詳見 [ROADMAP](./equipment-monitor-ai/ROADMAP.md)
 
-### 5. Pentaho ETL — Customer Data Quality Gate
+### 5. Pentaho ETL — 多來源客戶資料品質閘門
 
-Multi-source customer merge, validation, deduplication, and MD5 audit hash (Pentaho PDI).
+多來源客戶檔合併、品質篩選、去重與 MD5 稽核 hash（Pentaho PDI）。
 
 📁 [`ETL ENGINEER/portfolio/e1-data-quality`](./ETL%20ENGINEER/portfolio/e1-data-quality/)
 
