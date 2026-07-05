@@ -70,6 +70,12 @@ F1 賽事資訊 LINE Bot，整合 Dialogflow NLU。
 
 📁 [`ETL ENGINEER/portfolio/e1-data-quality`](./ETL%20ENGINEER/portfolio/e1-data-quality/)
 
+### 5b. Pentaho ETL — 銷售增量載入（CSV → PostgreSQL）
+
+增量 CSV 與 ODS 比對，只插新訂單；重跑 `COUNT(*)` 維持 6（冪等）。
+
+📁 [`ETL ENGINEER/portfolio/e2-incremental-sales`](./ETL%20ENGINEER/portfolio/e2-incremental-sales/)
+
 ### 6. Coursework — 大學作業精選
 
 大三～大四課程作業（MBTI NLP、時間序列、ML、CV、資料工程等）。
@@ -103,7 +109,7 @@ F1 賽事資訊 LINE Bot，整合 Dialogflow NLU。
 | 能讀懂並修正 AI code | Todo App README 的 Phase 1/2 紀錄 |
 | LINE Bot / API 整合 | F1 LINE Bot |
 | Python AI Backend / 時序預測 | Equipment Monitor AI |
-| ETL / Pentaho / 資料品質 | [Pentaho E1 品質閘門](./ETL%20ENGINEER/portfolio/e1-data-quality/) |
+| ETL / Pentaho / 資料品質 | [E1 品質閘門](./ETL%20ENGINEER/portfolio/e1-data-quality/) · [E2 增量載入](./ETL%20ENGINEER/portfolio/e2-incremental-sales/) |
 | Portfolio + Demo | 本 repo + Vercel Live Demo |
 
 ---

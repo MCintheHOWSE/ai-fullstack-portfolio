@@ -5,3 +5,4 @@
 | 專案 | 說明 |
 |------|------|
 | [e1-data-quality](./e1-data-quality/) | Pentaho PDI — 多來源客戶資料合併、品質篩選、去重、Java Expression 稽核 hash |
+| [e2-incremental-sales](./e2-incremental-sales/) | Pentaho PDI — 增量銷售 CSV、Merge Join 比對 ODS、PostgreSQL 冪等寫入 |
