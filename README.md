@@ -76,6 +76,12 @@ F1 賽事資訊 LINE Bot，整合 Dialogflow NLU。
 
 📁 [`ETL ENGINEER/portfolio/e2-incremental-sales`](./ETL%20ENGINEER/portfolio/e2-incremental-sales/)
 
+### 5c. Pentaho ETL — STG → ODS 分層導入（客戶主檔）
+
+E1 清洗後先落地 `stg.customers_raw`，再 Upsert 至 `ods.customers_clean`；STG / ODS 皆 COUNT = 6。
+
+📁 [`ETL ENGINEER/portfolio/e3-stg-to-ods`](./ETL%20ENGINEER/portfolio/e3-stg-to-ods/)
+
 ### 6. Coursework — 大學作業精選
 
 大三～大四課程作業（MBTI NLP、時間序列、ML、CV、資料工程等）。
@@ -109,7 +115,7 @@ F1 賽事資訊 LINE Bot，整合 Dialogflow NLU。
 | 能讀懂並修正 AI code | Todo App README 的 Phase 1/2 紀錄 |
 | LINE Bot / API 整合 | F1 LINE Bot |
 | Python AI Backend / 時序預測 | Equipment Monitor AI |
-| ETL / Pentaho / 資料品質 | [E1 品質閘門](./ETL%20ENGINEER/portfolio/e1-data-quality/) · [E2 增量載入](./ETL%20ENGINEER/portfolio/e2-incremental-sales/) |
+| ETL / Pentaho / 資料品質 | [E1](./ETL%20ENGINEER/portfolio/e1-data-quality/) · [E2 增量](./ETL%20ENGINEER/portfolio/e2-incremental-sales/) · [E3 分層](./ETL%20ENGINEER/portfolio/e3-stg-to-ods/) |
 | Portfolio + Demo | 本 repo + Vercel Live Demo |
 
 ---
