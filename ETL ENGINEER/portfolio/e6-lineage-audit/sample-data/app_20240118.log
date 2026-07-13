@@ -1,0 +1,10 @@
+2024-01-18 08:01:23|INFO|api-gateway|session=sess-a01|GET /health 200
+2024-01-18 08:02:10|INFO|etl-worker|batch=20240118|job=load_readings started
+2024-01-18 08:03:45|WARN|etl-worker|batch=20240118|rejected_rows=2 file=load_20240115.csv
+2024-01-18 08:05:12|ERROR|api-gateway|session=sess-b02|POST /auth 401 invalid_token
+2024-01-18 08:06:00|INFO|etl-worker|batch=20240118|rows_written=10 status=SUCCESS
+2024-01-18 08:07:33|INFO|api-gateway|session=sess-c03|GET /api/customers 200
+2024-01-18 08:08:01|WARN|api-gateway|session=sess-d04|GET /api/orders 429 rate_limit
+2024-01-18 08:09:15|ERROR|etl-worker|batch=20240118|step=stg_to_ods connection_timeout retry=1
+2024-01-18 08:10:22|INFO|etl-worker|batch=20240118|job=load_readings finished
+2024-01-18 08:11:05|INFO|api-gateway|session=sess-e05|GET /metrics 200

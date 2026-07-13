@@ -1,36 +1,72 @@
-# AI Engineer Portfolio — 許鈞富
+# Data Engineering & Full-Stack Portfolio — 許鈞富
 
-> Projects built with **AI-first workflow** (Cursor, Claude, GitHub Copilot) + human review & fixes.
+> **主軸：** Pentaho PDI + PostgreSQL 資料管線（品質閘門、增量、分層、SCD2、Job 編排、血緣／PII 治理）  
+> **第二軌：** 全端／API 實作（校園平台、Todo、LINE Bot、感測後端）
 
-**GitHub:** [MCintheHOWSE/ai-fullstack-portfolio](https://github.com/MCintheHOWSE/ai-fullstack-portfolio)
-
----
-
-## Live Demos（可點開試玩）
-
-| 專案 | Demo | 技術棧 | AI 工具 |
-|------|------|--------|---------|
-| Todo App | [Live Demo](https://ai-fullstack-portfolio.vercel.app) | Next.js 16, Supabase, PostgreSQL, RLS | Cursor |
-| Dot to Dot 校園平台 | [Live Demo](https://dot-to-dot-1mn5.onrender.com) · [原始碼](./dot-to-dot/) | React, Node.js, SQLite, Socket.io | 傳統開發 + Cursor 輔助重構 |
-| F1 LINE Bot | [GitHub 原始碼](./linebot專案/f1_bot/) | Python, Dialogflow, LINE API | Cursor |
-| Equipment Monitor AI | [專案 README](./equipment-monitor-ai/) | FastAPI, asyncio, statsmodels, sklearn | Cursor |
+**GitHub:** [MCintheHOWSE/data-engineering-portfolio](https://github.com/MCintheHOWSE/data-engineering-portfolio)
 
 ---
 
-## 專案說明
+## 資料工程 Labs（E1–E6）
 
-### 1. Todo App — AI 輔助全端（Phase 1 → Phase 2 單一專案）
+面試主砲：企業常見 ETL 場景（E1–E5 以 Pentaho Spoon 9.3 CE + PostgreSQL 實作）＋ E6 治理文件（對接 OpenMetadata 思維）。
 
-一個 Todo 作品集，內含兩階段演進，不再拆成兩個 repo 資料夾：
+| Lab | 主題 | 路徑 |
+|-----|------|------|
+| **E1** | 多來源客戶資料品質閘門（合併、驗證、去重、稽核 hash） | [`e1-data-quality`](./ETL%20ENGINEER/portfolio/e1-data-quality/) |
+| **E2** | 銷售增量載入（CSV → ODS，冪等） | [`e2-incremental-sales`](./ETL%20ENGINEER/portfolio/e2-incremental-sales/) |
+| **E3** | STG → ODS 分層導入（batch_id、Upsert） | [`e3-stg-to-ods`](./ETL%20ENGINEER/portfolio/e3-stg-to-ods/) |
+| **E4** | SCD Type 2 客戶維度（關閉舊列 + Insert 新版） | [`e4-scd2-customer`](./ETL%20ENGINEER/portfolio/e4-scd2-customer/) |
+| **E5** | 企業夜間 Job（E1→E3→E4 + Audit / Abort） | [`e5-enterprise-job`](./ETL%20ENGINEER/portfolio/e5-enterprise-job/) |
+| **E6** | 血緣圖、PII 治理、稽核 FAQ、集中日誌 | [`e6-lineage-audit`](./ETL%20ENGINEER/portfolio/e6-lineage-audit/) |
+
+📁 總覽：[`ETL ENGINEER/portfolio/`](./ETL%20ENGINEER/portfolio/)
+
+### E1 — 多來源客戶資料品質閘門
+
+合併兩區客戶檔、品質篩選、去重，並產出稽核用 hash（Pentaho PDI）。
+
+### E2 — 銷售增量載入（CSV → PostgreSQL）
+
+增量 CSV 與 ODS 比對，只插新訂單；重跑 `COUNT(*)` 維持不變（冪等）。
+
+### E3 — STG → ODS 分層導入（客戶主檔）
+
+E1 清洗後先落地 `stg.customers_raw`，再 Upsert 至 `ods.customers_clean`。
+
+### E4 — SCD Type 2 客戶維度
+
+手動 SCD2：Merge Join 比對 → 關閉舊列（`is_current`）→ Insert 新版，保留客戶屬性歷史。
+
+### E5 — 企業夜間 Job + Audit
+
+Job 串接 E1→E3→E4；成功寫入 `dwh.etl_audit_log`，失敗則 FAILED + Abort。
+
+### E6 — 血緣、PII 與稽核文件
+
+以 E1–E5 為底交出 lineage、PII 分類、稽核 FAQ 與集中 log 驗收（ERROR=2／WARN=2）；對接 OpenMetadata catalog 思維。
+
+---
+
+## 全端／應用（第二軌）
+
+| 專案 | Demo / 連結 | 技術棧 |
+|------|-------------|--------|
+| Todo App | [Live Demo](https://ai-engineer-preparation.vercel.app) | Next.js, Supabase, PostgreSQL, RLS |
+| Dot to Dot 校園平台 | [Live Demo](https://dot-to-dot-1mn5.onrender.com) · [原始碼](./dot-to-dot/) | React, Node.js, SQLite, Socket.io |
+| F1 LINE Bot | [原始碼](./linebot專案/f1_bot/) | Python, Dialogflow, LINE API |
+| Equipment Monitor AI | [專案 README](./equipment-monitor-ai/) | FastAPI, statsmodels, sklearn |
+
+### Todo App — 全端演進（Phase 1 → Phase 2）
 
 | 階段 | 內容 |
 |------|------|
-| **Phase 1** | localStorage、AI review、Vercel 部署 |
+| **Phase 1** | localStorage、code review、Vercel 部署 |
 | **Phase 2** | Supabase 登入、PostgreSQL、RLS 雲端同步 |
 
-📁 [`todo-app`](./todo-app)（Phase 1/2 紀錄見 `todo-app/docs/`）
+📁 [`todo-app`](./todo-app)
 
-### 2. Dot to Dot (SCU Connect) — 校園共享經濟平台
+### Dot to Dot (SCU Connect) — 校園共享經濟平台
 
 大四專題：共乘媒合、校園物流、跑腿服務、美食團購。
 
@@ -41,82 +77,41 @@
 
 **Live Demo：** https://dot-to-dot-1mn5.onrender.com（Render 免費方案，首次開啟可能需等 30–60 秒喚醒）
 
-**本地試玩：**
-
-```bash
-cd dot-to-dot
-npm install
-node server/index.js          # 終端 1 → http://localhost:3000
-npm run dev                   # 終端 2 → http://localhost:5173
-```
-
-測試帳號：`admin@scu.edu.tw` / `admin123`
-
-### 3. F1 LINE Bot — 聊天機器人
+### F1 LINE Bot — 聊天機器人
 
 F1 賽事資訊 LINE Bot，整合 Dialogflow NLU。
 
 📁 [`linebot專案/f1_bot`](./linebot專案/f1_bot)
 
-### 4. Equipment Monitor AI — 工業感測後端（進行中）
+### Equipment Monitor AI — 工業感測後端（進行中）
 
-模擬智慧工廠場景：感測資料 ingest、Holt-Winters 時序預測、Isolation Forest 異常偵測，FastAPI 非同步 API + Docker。
+感測資料 ingest、Holt-Winters 時序預測、Isolation Forest 異常偵測；FastAPI + Docker。
 
-📁 [`equipment-monitor-ai`](./equipment-monitor-ai) · 詳見 [ROADMAP](./equipment-monitor-ai/ROADMAP.md)
+📁 [`equipment-monitor-ai`](./equipment-monitor-ai)
 
-### 5. Pentaho ETL — 多來源客戶資料品質閘門
+### Coursework — 大學作業精選
 
-多來源客戶檔合併、品質篩選、去重與 Java Expression 稽核 hash（Pentaho PDI）。
-
-📁 [`ETL ENGINEER/portfolio/e1-data-quality`](./ETL%20ENGINEER/portfolio/e1-data-quality/)
-
-### 5b. Pentaho ETL — 銷售增量載入（CSV → PostgreSQL）
-
-增量 CSV 與 ODS 比對，只插新訂單；重跑 `COUNT(*)` 維持 6（冪等）。
-
-📁 [`ETL ENGINEER/portfolio/e2-incremental-sales`](./ETL%20ENGINEER/portfolio/e2-incremental-sales/)
-
-### 5c. Pentaho ETL — STG → ODS 分層導入（客戶主檔）
-
-E1 清洗後先落地 `stg.customers_raw`，再 Upsert 至 `ods.customers_clean`；STG / ODS 皆 COUNT = 6。
-
-📁 [`ETL ENGINEER/portfolio/e3-stg-to-ods`](./ETL%20ENGINEER/portfolio/e3-stg-to-ods/)
-
-### 6. Coursework — 大學作業精選
-
-大三～大四課程作業（MBTI NLP、時間序列、ML、CV、資料工程等）。
+MBTI NLP、時間序列、ML、CV、資料工程等。
 
 📁 [`coursework`](./coursework)
 
 ---
 
-## AI Development Workflow
+## 技能對照（ETL 職缺優先）
 
-```
-需求描述 → Cursor/Claude 生成初稿 → 人工 code review → 修正邊界案例 → commit → deploy
-```
-
-**Review 時我會檢查：**
-
-- Client/Server boundary、型別完整性
-- 空輸入、錯誤處理、安全性（不 commit `.env`）
-- UI 在行動裝置是否正常
-- AI 常見陷阱：hydration mismatch、硬編碼 localhost、缺少資料驗證
-
----
-
-## 技能對照
-
-| 職缺要求 | 對應作品 |
+| 職缺能力 | 對應作品 |
 |----------|----------|
-| AI 開發工具實戰 | Todo App（Cursor 全流程，見 `todo-app/docs/`） |
-| React / Next.js | Todo App、Dot to Dot 前端 |
-| Node.js / Python | Dot to Dot 後端、F1 LINE Bot |
-| 能讀懂並修正 AI code | Todo App README 的 Phase 1/2 紀錄 |
-| LINE Bot / API 整合 | F1 LINE Bot |
-| Python AI Backend / 時序預測 | Equipment Monitor AI |
-| ETL / Pentaho / 資料品質 | [E1](./ETL%20ENGINEER/portfolio/e1-data-quality/) · [E2 增量](./ETL%20ENGINEER/portfolio/e2-incremental-sales/) · [E3 分層](./ETL%20ENGINEER/portfolio/e3-stg-to-ods/) |
-| Portfolio + Demo | 本 repo + Vercel Live Demo |
+| ETL / Pentaho PDI | [E1](./ETL%20ENGINEER/portfolio/e1-data-quality/)–[E5](./ETL%20ENGINEER/portfolio/e5-enterprise-job/) |
+| 資料品質 / 去重 / 稽核 | E1、E5 audit log、E6 FAQ |
+| 增量載入 / 冪等 | E2 |
+| STG / ODS 分層 | E3 |
+| SCD Type 2 / 維度歷史 | E4 |
+| Job 編排 / 失敗處理 | E5 |
+| 血緣 / PII / OpenMetadata 思維 | [E6](./ETL%20ENGINEER/portfolio/e6-lineage-audit/) |
+| SQL / PostgreSQL | E2–E5、Todo App |
+| React / Node.js / API | Dot to Dot、Todo App、LINE Bot、Equipment Monitor |
+
+開發時會使用 Cursor 等 AI 輔助工具，並以人工 review 修正邊界案例與安全性問題。
 
 ---
 
@@ -124,4 +119,3 @@ E1 清洗後先落地 `stg.customers_raw`，再 Upsert 至 `ods.customers_clean`
 
 - GitHub: [@MCintheHOWSE](https://github.com/MCintheHOWSE)
 - Email: mcconshell@gmail.com
-

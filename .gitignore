@@ -53,6 +53,7 @@ ETL ENGINEER/面試資料/
 # Logs
 *.log
 npm-debug.log*
+!ETL ENGINEER/portfolio/e6-lineage-audit/sample-data/*.log
 
 # Large media (GitHub 建議單檔 < 50MB；影片改放雲端)
 *.mp4
@@ -65,3 +66,6 @@ coursework/**/*.h5
 coursework/**/*.xlsx
 coursework/**/yolov9/
 coursework/**/.ipynb_checkpoints/
+
+# OpenMetadata local Docker volumes (large)
+ETL ENGINEER/openmetadata-docker/docker-volume/
