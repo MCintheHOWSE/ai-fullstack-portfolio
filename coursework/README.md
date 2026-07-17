@@ -14,7 +14,7 @@
 | [time-series-aviation](./time-series-aviation/) | 台灣航空客運量預測 | R, forecast, Python 爬蟲 |
 | [machine-learning](./machine-learning/) | 機器學習作業精選 | Jupyter, pandas, sklearn, TensorFlow |
 | [fintech-neural-networks](./fintech-neural-networks/) | 金融因子 IC 神經網路 | Keras, pandas |
-| [data-engineering](./data-engineering/) | 公路 VD 資料 Airflow 管道 | Python, Airflow, Elasticsearch |
+| [data-engineering](./data-engineering/) | 資料工程：HW1 工具入門、HW2 Airflow 清洗、期末公路 VD ETL | Python, pandas, Airflow, NiFi, Elasticsearch |
 | [computer-vision](./computer-vision/) | YOLO 號誌偵測、車速估計、EEG 報告 | Python, OpenCV, YOLO |
 
 另見根目錄：
