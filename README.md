@@ -97,6 +97,14 @@ MBTI NLP、時間序列、ML、CV、資料工程等。
 
 ---
 
+## 面試準備 — 歐立威 DB 導入／維運（SQL／EDB）
+
+面試後整理：職缺偏 **EDB／PostgreSQL 導入與 MA**（非純 ETL）。含角色摘要、EDB 產品小抄、工作流程技能、Linux＋Postgres 口試 10 題。
+
+📁 [`interview-prep/omniwaresoft-db-si/`](./interview-prep/omniwaresoft-db-si/)
+
+---
+
 ## 技能對照（ETL 職缺優先）
 
 | 職缺能力 | 對應作品 |
@@ -110,6 +118,7 @@ MBTI NLP、時間序列、ML、CV、資料工程等。
 | 血緣 / PII / OpenMetadata 思維 | [E6](./ETL%20ENGINEER/portfolio/e6-lineage-audit/) |
 | SQL / PostgreSQL | E2–E5、Todo App |
 | React / Node.js / API | Dot to Dot、Todo App、LINE Bot、Equipment Monitor |
+| DB 導入／維運（EDB 線） | [歐立威面試筆記](./interview-prep/omniwaresoft-db-si/) |
 
 開發時會使用 Cursor 等 AI 輔助工具，並以人工 review 修正邊界案例與安全性問題。
 
