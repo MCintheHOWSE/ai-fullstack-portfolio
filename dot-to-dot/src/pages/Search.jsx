@@ -22,12 +22,10 @@ export default function Search() {
                 const response = await fetch('/api/rides', { cache: 'no-store' });
                 if (response.ok) {
                     const data = await response.json();
-                    // Get API data
                     const apiRides = data.data || data || [];
-                    // Combine API rides with mock rides, ensuring mock rides are always shown
-                    const combinedRides = [...apiRides, ...mockRides];
-                    setRides(combinedRides);
-                    setFilteredRides(combinedRides);
+                    // 僅在 API 失敗時使用 mock；成功時只顯示資料庫真實資料
+                    setRides(apiRides);
+                    setFilteredRides(apiRides);
                 } else {
                     console.error('Failed to fetch rides');
                     setRides(mockRides); // Fallback to mock data

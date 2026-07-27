@@ -22,12 +22,9 @@ export default function Search() {
                 const response = await fetch('/api/rides', { cache: 'no-store' });
                 if (response.ok) {
                     const data = await response.json();
-                    // Get API data
                     const apiRides = data.data || data || [];
-                    // Combine API rides with mock rides, ensuring mock rides are always shown
-                    const combinedRides = [...apiRides, ...mockRides];
-                    setRides(combinedRides);
-                    setFilteredRides(combinedRides);
+                    setRides(apiRides);
+                    setFilteredRides(apiRides);
                 } else {
                     console.error('Failed to fetch rides');
                     setRides(mockRides); // Fallback to mock data
