@@ -7,6 +7,12 @@ export const isAdmin = (user) => {
 };
 
 export const getUserFromStorage = () => {
-    const userStr = localStorage.getItem('user');
-    return userStr ? JSON.parse(userStr) : null;
+    try {
+        const userStr = localStorage.getItem('user');
+        if (!userStr) return null;
+        return JSON.parse(userStr);
+    } catch {
+        localStorage.removeItem('user');
+        return null;
+    }
 };

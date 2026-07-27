@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getUserFromStorage } from '../utils/auth';
 
 export default function Home() {
-    const user = JSON.parse(localStorage.getItem('user'));
+    const user = getUserFromStorage();
     const navigate = useNavigate();
     const [showRideSelection, setShowRideSelection] = useState(false);
 

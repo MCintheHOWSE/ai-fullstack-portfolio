@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { io } from 'socket.io-client';
 import { socketServerUrl } from '../config';
+import { getUserFromStorage } from '../utils/auth';
 
 const NotificationListener = () => {
     const navigate = useNavigate();
@@ -9,14 +10,12 @@ const NotificationListener = () => {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
-        const storedUser = localStorage.getItem('user');
-        if (storedUser) {
-            setUser(JSON.parse(storedUser));
-        }
+        setUser(getUserFromStorage());
 
-        // Request browser permission
-        if (Notification.permission !== 'granted' && Notification.permission !== 'denied') {
-            Notification.requestPermission();
+        if (typeof window !== 'undefined' && 'Notification' in window) {
+            if (Notification.permission !== 'granted' && Notification.permission !== 'denied') {
+                Notification.requestPermission().catch(() => {});
+            }
         }
     }, []);
 
@@ -32,8 +31,7 @@ const NotificationListener = () => {
             console.log("Notification received:", data);
             setNotification(data);
 
-            // Browser Notification
-            if (Notification.permission === 'granted') {
+            if (typeof window !== 'undefined' && 'Notification' in window && Notification.permission === 'granted') {
                 new Notification("Dot to Dot", { body: data.content || data.text });
             }
 

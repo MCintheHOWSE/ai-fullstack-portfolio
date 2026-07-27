@@ -31,13 +31,13 @@ import DeliveryDetail from './pages/DeliveryDetail'
 import MyDeliveries from './pages/MyDeliveries'
 import NotificationListener from './components/NotificationListener'
 import RideDetail from './pages/RideDetail'
+import { getUserFromStorage } from './utils/auth'
 
 import './App.css'
 
 // Protected Route Component
 const ProtectedRoute = ({ children, adminOnly = false }) => {
-  const userStr = localStorage.getItem('user');
-  const user = userStr ? JSON.parse(userStr) : null;
+  const user = getUserFromStorage();
 
   if (!user) {
     return <Navigate to="/login" replace />;
@@ -85,7 +85,7 @@ function App() {
             path="/admin"
             element={
               <ProtectedRoute adminOnly={true}>
-                <AdminDashboard currentUser={JSON.parse(localStorage.getItem('user'))} />
+                <AdminDashboard currentUser={getUserFromStorage()} />
               </ProtectedRoute>
             }
           />

@@ -2,6 +2,7 @@ import express from 'express';
 import sqlite3 from 'sqlite3';
 import cors from 'cors';
 import bodyParser from 'body-parser';
+import compression from 'compression';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { sendVerificationEmail } from './email_service.js';
@@ -32,6 +33,7 @@ const io = new Server(httpServer, {
 const port = process.env.PORT || 3000;
 
 // Middleware
+app.use(compression());
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -2814,8 +2816,20 @@ const db = new sqlite3Verbose.Database(dbPath, (err) => {
 
         const distPath = path.resolve(__dirname, '../dist');
         if (process.env.NODE_ENV === 'production') {
-            app.use(express.static(distPath));
+            app.use('/assets', express.static(path.join(distPath, 'assets'), {
+                maxAge: '1y',
+                immutable: true,
+            }));
+            app.use(express.static(distPath, {
+                maxAge: 0,
+                setHeaders: (res, filePath) => {
+                    if (filePath.endsWith('index.html')) {
+                        res.setHeader('Cache-Control', 'no-cache');
+                    }
+                },
+            }));
             app.get(/^(?!\/api).*/, (req, res) => {
+                res.setHeader('Cache-Control', 'no-cache');
                 res.sendFile(path.join(distPath, 'index.html'));
             });
         }
